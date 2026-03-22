@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+cleaned_output.csv
+duplicates_review.csv
+sample_data/
+
