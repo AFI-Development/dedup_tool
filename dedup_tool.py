@@ -22,7 +22,6 @@ DEFAULT_ADDRESS_COLUMNS = ["address", "street", "street_address"]
 
 
 def normalize_text(value: object) -> str:
-    """Normalize general text for matching."""
     if pd.isna(value):
         return ""
     text = str(value).strip().lower()
@@ -75,9 +74,7 @@ def compute_fuzzy_score(left: str, right: str) -> int:
     if not left or not right:
         return 0
     if fuzz is None:
-        raise RuntimeError(
-            "rapidfuzz is not installed. Install it with: pip install rapidfuzz"
-        )
+        raise RuntimeError("rapidfuzz is not installed. Install it with: pip install rapidfuzz")
     return int(fuzz.token_sort_ratio(left, right))
 
 
@@ -108,13 +105,35 @@ def exact_dedup(df: pd.DataFrame, subset: list[str] | None) -> tuple[pd.DataFram
     return cleaned, duplicates
 
 
+def classify_confidence(score: float) -> str:
+    if score >= 0.90:
+        return "high"
+    if score >= 0.75:
+        return "medium"
+    return "low"
+
+
+def compute_weighted_score(
+    name_score: int,
+    email_match: bool,
+    phone_match: bool,
+    address_match: bool,
+) -> float:
+    score = 0.0
+    score += (name_score / 100.0) * 0.50
+    score += 0.25 if email_match else 0.0
+    score += 0.15 if phone_match else 0.0
+    score += 0.10 if address_match else 0.0
+    return min(score, 1.0)
+
+
 def fuzzy_dedup(
     df: pd.DataFrame,
     name_col: str | None,
     email_col: str | None,
     phone_col: str | None,
     address_col: str | None,
-    threshold: int,
+    threshold: float,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     working = df.copy()
     working["_normalized_name"] = working[name_col].map(normalize_text) if name_col else ""
@@ -126,7 +145,12 @@ def fuzzy_dedup(
     duplicate_rows: list[dict] = []
 
     for idx, row in working.iterrows():
-        is_duplicate = False
+        best_match_index: int | None = None
+        best_match_score = 0.0
+        best_match_name_score = 0
+        best_email_match = False
+        best_phone_match = False
+        best_address_match = False
 
         for kept_idx in keep_indices:
             kept_row = working.loc[kept_idx]
@@ -144,29 +168,44 @@ def fuzzy_dedup(
                 and row["_normalized_address"] == kept_row["_normalized_address"]
             )
 
-            name_score = compute_fuzzy_score(
-                row["_normalized_name"], kept_row["_normalized_name"]
-            ) if name_col else 0
-
-            likely_duplicate = (
-                email_match
-                or phone_match
-                or (address_match and name_score >= threshold)
-                or name_score >= threshold
+            name_score = (
+                compute_fuzzy_score(row["_normalized_name"], kept_row["_normalized_name"])
+                if name_col
+                else 0
             )
 
-            if likely_duplicate:
-                merged = row.to_dict()
-                merged["matched_to_index"] = kept_idx
-                merged["name_similarity_score"] = name_score
-                merged["matched_on_email"] = email_match
-                merged["matched_on_phone"] = phone_match
-                merged["matched_on_address"] = address_match
-                duplicate_rows.append(merged)
-                is_duplicate = True
-                break
+            weighted_score = compute_weighted_score(
+                name_score=name_score,
+                email_match=email_match,
+                phone_match=phone_match,
+                address_match=address_match,
+            )
 
-        if not is_duplicate:
+            if weighted_score > best_match_score:
+                best_match_index = kept_idx
+                best_match_score = weighted_score
+                best_match_name_score = name_score
+                best_email_match = email_match
+                best_phone_match = phone_match
+                best_address_match = address_match
+
+        minimum_name_score = 70 if name_col else 0
+
+        if (
+	    best_match_index is not None
+	    and best_match_score >= threshold
+	    and best_match_name_score >= minimum_name_score
+        ):
+            merged = row.to_dict()
+            merged["matched_to_index"] = best_match_index
+            merged["name_similarity_score"] = best_match_name_score
+            merged["weighted_match_score"] = round(best_match_score, 4)
+            merged["confidence"] = classify_confidence(best_match_score)
+            merged["matched_on_email"] = best_email_match
+            merged["matched_on_phone"] = best_phone_match
+            merged["matched_on_address"] = best_address_match
+            duplicate_rows.append(merged)
+        else:
             keep_indices.append(idx)
 
     cleaned = working.loc[keep_indices].drop(
@@ -178,6 +217,7 @@ def fuzzy_dedup(
         ],
         errors="ignore",
     )
+
     duplicates = pd.DataFrame(duplicate_rows).drop(
         columns=[
             "_normalized_name",
@@ -187,7 +227,40 @@ def fuzzy_dedup(
         ],
         errors="ignore",
     )
+
     return cleaned, duplicates
+
+
+def print_debug_preview(cleaned: pd.DataFrame, duplicates: pd.DataFrame, limit: int) -> None:
+    print("\n--- SAMPLE CLEANED DATA ---")
+    if cleaned.empty:
+        print("No clean rows to preview.")
+    else:
+        print(cleaned.head(limit).to_string(index=False))
+
+    print("\n--- SAMPLE DUPLICATES ---")
+    if duplicates.empty:
+        print("No duplicate rows to preview.")
+    else:
+        preferred_columns = [
+            col
+            for col in [
+                "name",
+                "email",
+                "phone",
+                "address",
+                "matched_to_index",
+                "name_similarity_score",
+                "weighted_match_score",
+                "confidence",
+                "matched_on_email",
+                "matched_on_phone",
+                "matched_on_address",
+            ]
+            if col in duplicates.columns
+        ]
+        preview_df = duplicates[preferred_columns] if preferred_columns else duplicates
+        print(preview_df.head(limit).to_string(index=False))
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -219,9 +292,20 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--threshold",
+        type=float,
+        default=0.85,
+        help="Fuzzy weighted threshold from 0.0 to 1.0",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Print a small preview of cleaned and duplicate rows to terminal",
+    )
+    parser.add_argument(
+        "--preview-rows",
         type=int,
-        default=90,
-        help="Fuzzy name similarity threshold (0-100)",
+        default=5,
+        help="Number of preview rows to show when using --debug",
     )
     return parser
 
@@ -287,6 +371,10 @@ def main() -> int:
     print(f"Duplicates rows: {len(duplicates):,}")
     print(f"Saved clean file to: {clean_path}")
     print(f"Saved duplicates review file to: {duplicates_path}")
+
+    if args.debug:
+        print_debug_preview(cleaned, duplicates, args.preview_rows)
+
     return 0
 
 
