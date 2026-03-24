@@ -134,8 +134,9 @@ def fuzzy_dedup(
     phone_col: str | None,
     address_col: str | None,
     threshold: float,
+    review_threshold: float,
     min_name_score: int,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     working = df.copy()
     working["_normalized_name"] = working[name_col].map(normalize_text) if name_col else ""
     working["_normalized_email"] = working[email_col].map(normalize_email) if email_col else ""
@@ -144,6 +145,7 @@ def fuzzy_dedup(
 
     keep_indices: list[int] = []
     duplicate_rows: list[dict] = []
+    review_rows: list[dict] = []
 
     for idx, row in working.iterrows():
         best_match_index: int | None = None
@@ -202,10 +204,27 @@ def fuzzy_dedup(
             merged["name_similarity_score"] = best_match_name_score
             merged["weighted_match_score"] = round(best_match_score, 4)
             merged["confidence"] = classify_confidence(best_match_score)
+            merged["decision"] = "duplicate"
             merged["matched_on_email"] = best_email_match
             merged["matched_on_phone"] = best_phone_match
             merged["matched_on_address"] = best_address_match
             duplicate_rows.append(merged)
+        elif (
+            best_match_index is not None
+            and best_match_score >= review_threshold
+            and best_match_name_score >= minimum_name_score
+        ):
+            review = row.to_dict()
+            review["matched_to_index"] = best_match_index
+            review["name_similarity_score"] = best_match_name_score
+            review["weighted_match_score"] = round(best_match_score, 4)
+            review["confidence"] = classify_confidence(best_match_score)
+            review["decision"] = "review"
+            review["matched_on_email"] = best_email_match
+            review["matched_on_phone"] = best_phone_match
+            review["matched_on_address"] = best_address_match
+            review_rows.append(review)
+            keep_indices.append(idx)
         else:
             keep_indices.append(idx)
 
@@ -229,7 +248,17 @@ def fuzzy_dedup(
         errors="ignore",
     )
 
-    return cleaned, duplicates
+    review_df = pd.DataFrame(review_rows).drop(
+        columns=[
+            "_normalized_name",
+            "_normalized_email",
+            "_normalized_phone",
+            "_normalized_address",
+        ],
+        errors="ignore",
+    )
+
+    return cleaned, duplicates, review_df
 
 
 def print_debug_preview(cleaned: pd.DataFrame, duplicates: pd.DataFrame, limit: int) -> None:
@@ -304,6 +333,17 @@ def build_parser() -> argparse.ArgumentParser:
          help="Minimum fuzzy name score required for fuzzy duplicate classification",
     )
     parser.add_argument(
+         "--review-threshold",
+         type=float,
+         default=0.75,
+         help="Minimum weighted score for manual review classification",
+    )
+    parser.add_argument(
+         "--output-review",
+         default="manual_review.csv",
+         help="Path to manual-review output file",
+    )
+    parser.add_argument(
         "--debug",
         action="store_true",
         help="Print a small preview of cleaned and duplicate rows to terminal",
@@ -324,6 +364,7 @@ def main() -> int:
     input_path = Path(args.input_file)
     clean_path = Path(args.output_clean)
     duplicates_path = Path(args.output_duplicates)
+    review_path = Path(args.output_review)
 
     if not input_path.exists():
         print(f"Input file not found: {input_path}", file=sys.stderr)
@@ -342,6 +383,7 @@ def main() -> int:
     if args.mode == "exact":
         subset = args.columns if args.columns else None
         cleaned, duplicates = exact_dedup(df, subset=subset)
+        review_rows=pd.DataFrame()
     else:
         name_col = first_existing_column(df.columns, DEFAULT_NAME_COLUMNS)
         email_col = first_existing_column(df.columns, DEFAULT_EMAIL_COLUMNS)
@@ -356,19 +398,21 @@ def main() -> int:
             )
             return 1
 
-        cleaned, duplicates = fuzzy_dedup(
+        cleaned, duplicates, review_rows = fuzzy_dedup(
             df=df,
             name_col=name_col,
             email_col=email_col,
             phone_col=phone_col,
             address_col=address_col,
             threshold=args.threshold,
+            review_threshold=args.review_threshold,
             min_name_score=args.min_name_score,
         )
 
     try:
         save_file(cleaned, clean_path)
         save_file(duplicates, duplicates_path)
+        save_file(review_rows, review_path)
     except Exception as exc:
         print(f"Could not save output: {exc}", file=sys.stderr)
         return 1
@@ -379,6 +423,7 @@ def main() -> int:
     print(f"Duplicates rows: {len(duplicates):,}")
     print(f"Saved clean file to: {clean_path}")
     print(f"Saved duplicates review file to: {duplicates_path}")
+    print(f"Saved review file to: {review_path}")
 
     if args.debug:
         print_debug_preview(cleaned, duplicates, args.preview_rows)
