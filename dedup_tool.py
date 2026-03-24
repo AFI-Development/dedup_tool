@@ -126,6 +126,44 @@ def compute_weighted_score(
     score += 0.10 if address_match else 0.0
     return min(score, 1.0)
 
+def build_match_record(
+    row: pd.Series,
+    matched_row: pd.Series,
+    matched_index: int,
+    name_score: int,
+    weighted_score: float,
+    confidence: str,
+    email_match: bool,
+    phone_match: bool,
+    address_match: bool,
+    decision: str,
+    name_col: str | None,
+    email_col: str | None,
+    phone_col: str | None,
+    address_col: str | None,
+) -> dict:
+    return {
+        "decision": decision,
+        "matched_to_index": matched_index,
+        "name_similarity_score": name_score,
+        "weighted_match_score": round(weighted_score, 4),
+        "confidence": confidence,
+        "matched_on_email": email_match,
+        "matched_on_phone": phone_match,
+        "matched_on_address": address_match,
+
+        "candidate_name": row[name_col] if name_col else "",
+        "matched_name": matched_row[name_col] if name_col else "",
+
+        "candidate_email": row[email_col] if email_col else "",
+        "matched_email": matched_row[email_col] if email_col else "",
+
+        "candidate_phone": row[phone_col] if phone_col else "",
+        "matched_phone": matched_row[phone_col] if phone_col else "",
+
+        "candidate_address": row[address_col] if address_col else "",
+        "matched_address": matched_row[address_col] if address_col else "",
+    }
 
 def fuzzy_dedup(
     df: pd.DataFrame,
@@ -149,6 +187,7 @@ def fuzzy_dedup(
 
     for idx, row in working.iterrows():
         best_match_index: int | None = None
+        best_matched_row: pd.Series | None = None
         best_match_score = 0.0
         best_match_name_score = 0
         best_email_match = False
@@ -186,6 +225,7 @@ def fuzzy_dedup(
 
             if weighted_score > best_match_score:
                 best_match_index = kept_idx
+                best_matched_row = kept_row
                 best_match_score = weighted_score
                 best_match_name_score = name_score
                 best_email_match = email_match
@@ -195,36 +235,54 @@ def fuzzy_dedup(
         minimum_name_score = min_name_score if name_col else 0
 
         if (
-	    best_match_index is not None
-	    and best_match_score >= threshold
-	    and best_match_name_score >= minimum_name_score
+            best_match_index is not None
+            and best_matched_row is not None
+            and best_match_score >= threshold
+            and best_match_name_score >= minimum_name_score
         ):
-            merged = row.to_dict()
-            merged["matched_to_index"] = best_match_index
-            merged["name_similarity_score"] = best_match_name_score
-            merged["weighted_match_score"] = round(best_match_score, 4)
-            merged["confidence"] = classify_confidence(best_match_score)
-            merged["decision"] = "duplicate"
-            merged["matched_on_email"] = best_email_match
-            merged["matched_on_phone"] = best_phone_match
-            merged["matched_on_address"] = best_address_match
-            duplicate_rows.append(merged)
+            record = build_match_record(
+                row=row,
+                matched_row=best_matched_row,
+                matched_index=best_match_index,
+                name_score=best_match_name_score,
+                weighted_score=best_match_score,
+                confidence=classify_confidence(best_match_score),
+                email_match=best_email_match,
+                phone_match=best_phone_match,
+                address_match=best_address_match,
+                decision="duplicate",
+                name_col=name_col,
+                email_col=email_col,
+                phone_col=phone_col,
+                address_col=address_col,
+            )
+            duplicate_rows.append(record)
+
         elif (
             best_match_index is not None
+            and best_matched_row is not None
             and best_match_score >= review_threshold
             and best_match_name_score >= minimum_name_score
         ):
-            review = row.to_dict()
-            review["matched_to_index"] = best_match_index
-            review["name_similarity_score"] = best_match_name_score
-            review["weighted_match_score"] = round(best_match_score, 4)
-            review["confidence"] = classify_confidence(best_match_score)
-            review["decision"] = "review"
-            review["matched_on_email"] = best_email_match
-            review["matched_on_phone"] = best_phone_match
-            review["matched_on_address"] = best_address_match
-            review_rows.append(review)
+            record = build_match_record(
+                row=row,
+                matched_row=best_matched_row,
+                matched_index=best_match_index,
+                name_score=best_match_name_score,
+                weighted_score=best_match_score,
+                confidence=classify_confidence(best_match_score),
+                email_match=best_email_match,
+                phone_match=best_phone_match,
+                address_match=best_address_match,
+                decision="review",
+                name_col=name_col,
+                email_col=email_col,
+                phone_col=phone_col,
+                address_col=address_col,
+            )
+            review_rows.append(record)
             keep_indices.append(idx)
+
         else:
             keep_indices.append(idx)
 
@@ -273,22 +331,25 @@ def print_debug_preview(cleaned: pd.DataFrame, duplicates: pd.DataFrame, limit: 
         print("No duplicate rows to preview.")
     else:
         preferred_columns = [
-            col
-            for col in [
-                "name",
-                "email",
-                "phone",
-                "address",
-                "matched_to_index",
-                "name_similarity_score",
-                "weighted_match_score",
-                "confidence",
-                "matched_on_email",
-                "matched_on_phone",
-                "matched_on_address",
-            ]
-            if col in duplicates.columns
+        col for col in [
+            "decision",
+            "candidate_name",
+            "matched_name",
+            "candidate_email",
+            "matched_email",
+            "candidate_phone",
+            "matched_phone",
+            "candidate_address",
+            "matched_address",
+            "name_similarity_score",
+            "weighted_match_score",
+            "confidence",
+            "matched_on_email",
+            "matched_on_phone",
+            "matched_on_address",
         ]
+        if col in duplicates.columns
+    ]
         preview_df = duplicates[preferred_columns] if preferred_columns else duplicates
         print(preview_df.head(limit).to_string(index=False))
 
