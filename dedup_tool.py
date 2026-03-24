@@ -134,6 +134,7 @@ def fuzzy_dedup(
     phone_col: str | None,
     address_col: str | None,
     threshold: float,
+    min_name_score: int,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     working = df.copy()
     working["_normalized_name"] = working[name_col].map(normalize_text) if name_col else ""
@@ -189,7 +190,7 @@ def fuzzy_dedup(
                 best_phone_match = phone_match
                 best_address_match = address_match
 
-        minimum_name_score = 70 if name_col else 0
+        minimum_name_score = min_name_score if name_col else 0
 
         if (
 	    best_match_index is not None
@@ -297,6 +298,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Fuzzy weighted threshold from 0.0 to 1.0",
     )
     parser.add_argument(
+         "--min-name-score",
+         type=int,
+         default=70,
+         help="Minimum fuzzy name score required for fuzzy duplicate classification",
+    )
+    parser.add_argument(
         "--debug",
         action="store_true",
         help="Print a small preview of cleaned and duplicate rows to terminal",
@@ -356,6 +363,7 @@ def main() -> int:
             phone_col=phone_col,
             address_col=address_col,
             threshold=args.threshold,
+            min_name_score=args.min_name_score,
         )
 
     try:
