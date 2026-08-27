@@ -82,9 +82,9 @@ def load_file(path: Path) -> pd.DataFrame:
     suffix = path.suffix.lower()
     if suffix == ".csv":
         return pd.read_csv(path)
-    if suffix in {".xlsx", ".xls"}:
+    if suffix == ".xlsx":
         return pd.read_excel(path)
-    raise ValueError(f"Unsupported file type: {suffix}. Use CSV or Excel.")
+    raise ValueError(f"Unsupported file type: {suffix}. Use CSV or XLSX.")
 
 
 def save_file(df: pd.DataFrame, path: Path) -> None:
@@ -92,10 +92,10 @@ def save_file(df: pd.DataFrame, path: Path) -> None:
     if suffix == ".csv":
         df.to_csv(path, index=False)
         return
-    if suffix in {".xlsx", ".xls"}:
+    if suffix == ".xlsx":
         df.to_excel(path, index=False)
         return
-    raise ValueError(f"Unsupported output type: {suffix}. Use CSV or Excel.")
+    raise ValueError(f"Unsupported output type: {suffix}. Use CSV or XLSX.")
 
 
 def exact_dedup(df: pd.DataFrame, subset: list[str] | None) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -126,6 +126,7 @@ def compute_weighted_score(
     score += 0.10 if address_match else 0.0
     return min(score, 1.0)
 
+
 def build_match_record(
     row: pd.Series,
     matched_row: pd.Series,
@@ -151,19 +152,16 @@ def build_match_record(
         "matched_on_email": email_match,
         "matched_on_phone": phone_match,
         "matched_on_address": address_match,
-
         "candidate_name": row[name_col] if name_col else "",
         "matched_name": matched_row[name_col] if name_col else "",
-
         "candidate_email": row[email_col] if email_col else "",
         "matched_email": matched_row[email_col] if email_col else "",
-
         "candidate_phone": row[phone_col] if phone_col else "",
         "matched_phone": matched_row[phone_col] if phone_col else "",
-
         "candidate_address": row[address_col] if address_col else "",
         "matched_address": matched_row[address_col] if address_col else "",
     }
+
 
 def fuzzy_dedup(
     df: pd.DataFrame,
@@ -331,32 +329,33 @@ def print_debug_preview(cleaned: pd.DataFrame, duplicates: pd.DataFrame, limit: 
         print("No duplicate rows to preview.")
     else:
         preferred_columns = [
-        col for col in [
-            "decision",
-            "candidate_name",
-            "matched_name",
-            "candidate_email",
-            "matched_email",
-            "candidate_phone",
-            "matched_phone",
-            "candidate_address",
-            "matched_address",
-            "name_similarity_score",
-            "weighted_match_score",
-            "confidence",
-            "matched_on_email",
-            "matched_on_phone",
-            "matched_on_address",
+            col
+            for col in [
+                "decision",
+                "candidate_name",
+                "matched_name",
+                "candidate_email",
+                "matched_email",
+                "candidate_phone",
+                "matched_phone",
+                "candidate_address",
+                "matched_address",
+                "name_similarity_score",
+                "weighted_match_score",
+                "confidence",
+                "matched_on_email",
+                "matched_on_phone",
+                "matched_on_address",
+            ]
+            if col in duplicates.columns
         ]
-        if col in duplicates.columns
-    ]
         preview_df = duplicates[preferred_columns] if preferred_columns else duplicates
         print(preview_df.head(limit).to_string(index=False))
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Deduplicate CSV or Excel data using exact or fuzzy matching."
+        description="Deduplicate CSV or XLSX data using exact or fuzzy matching."
     )
     parser.add_argument("input_file", help="Path to input CSV/XLSX file")
     parser.add_argument(
@@ -388,21 +387,21 @@ def build_parser() -> argparse.ArgumentParser:
         help="Fuzzy weighted threshold from 0.0 to 1.0",
     )
     parser.add_argument(
-         "--min-name-score",
-         type=int,
-         default=70,
-         help="Minimum fuzzy name score required for fuzzy duplicate classification",
+        "--min-name-score",
+        type=int,
+        default=70,
+        help="Minimum fuzzy name score required for fuzzy duplicate classification",
     )
     parser.add_argument(
-         "--review-threshold",
-         type=float,
-         default=0.75,
-         help="Minimum weighted score for manual review classification",
+        "--review-threshold",
+        type=float,
+        default=0.75,
+        help="Minimum weighted score for manual review classification",
     )
     parser.add_argument(
-         "--output-review",
-         default="manual_review.csv",
-         help="Path to manual-review output file",
+        "--output-review",
+        default="manual_review.csv",
+        help="Path to manual-review output file",
     )
     parser.add_argument(
         "--debug",
@@ -444,7 +443,7 @@ def main() -> int:
     if args.mode == "exact":
         subset = args.columns if args.columns else None
         cleaned, duplicates = exact_dedup(df, subset=subset)
-        review_rows=pd.DataFrame()
+        review_rows = pd.DataFrame()
     else:
         name_col = first_existing_column(df.columns, DEFAULT_NAME_COLUMNS)
         email_col = first_existing_column(df.columns, DEFAULT_EMAIL_COLUMNS)
