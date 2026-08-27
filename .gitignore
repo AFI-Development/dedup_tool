@@ -1,4 +1,26 @@
+# Python
 .venv/
+__pycache__/
+*.pyc
+
+# IDE / local environment
+.idea/
+.vscode/
+
+# Secrets / environment
+.env
+.env.*
+*.pem
+*.key
+
+# Generated dedup output
+cleaned_output.csv
+duplicates_review.csv
+manual_review.csv
+output/
+
+# Local working/test data
+sample_data/.venv/
 __pycache__/
 *.pyc
 cleaned_output.csv
