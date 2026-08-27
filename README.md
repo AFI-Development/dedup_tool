@@ -2,7 +2,7 @@
 
 **Version 0.1.0 — Early usable release**
 
-A command-line Python tool for deduplicating CSV and Excel datasets using exact and fuzzy matching.
+A command-line Python tool for deduplicating CSV and XLSX datasets using exact and fuzzy matching.
 
 Fuzzy mode combines normalized name similarity with email, phone, and address signals, then separates high-confidence duplicates from records that should be reviewed manually.
 
@@ -13,8 +13,8 @@ Fuzzy mode combines normalized name similarity with email, phone, and address si
 - Weighted scoring across name, email, phone, and address
 - Confidence classification
 - Manual-review output for ambiguous matches
-- CSV and Excel input support
-- CSV or Excel output support
+- CSV and XLSX input support
+- CSV or XLSX output support
 
 ## Installation
 
@@ -57,7 +57,7 @@ python dedup_tool.py input.csv --mode fuzzy --threshold 0.90 --review-threshold 
 ## Input Formats
 
 - CSV (`.csv`)
-- Excel (`.xlsx`, `.xls`)
+- Excel (`.xlsx`)
 
 ## Output
 
@@ -97,6 +97,8 @@ The number of preview rows can be changed with `--preview-rows`.
 Version 0.1.0 is an early usable release. Matching weights and thresholds are currently rule-based and may need tuning for different datasets or industries.
 
 Large datasets may require additional performance optimization because fuzzy matching currently compares candidate records iteratively.
+
+Legacy `.xls` files are not supported in this release; convert them to `.xlsx` or `.csv` first.
 
 ## Planned Improvements
 
