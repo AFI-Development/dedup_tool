@@ -69,7 +69,7 @@ By default, the tool creates:
 
 Custom output paths can be supplied with `--output-clean`, `--output-duplicates`, and `--output-review`.
 
-Generated run outputs are intentionally not tracked in Git. Reproducible demo and test fixtures may be committed under `tests/` when they are part of the documented test suite rather than transient output.
+Reproducible demo and test fixtures may be committed under `tests/` when they are part of the documented test suite rather than transient output.
 
 ## Demo and Test Fixtures
 
@@ -86,7 +86,7 @@ For example, the real-estate demo fixture is intended to exercise:
 - missing fields
 - multi-field fuzzy matches
 
-Ground-truth files may be stored alongside demo inputs so matching results can be checked against known duplicate relationships. Generated cleaned files, review reports, benchmark outputs, and other run artifacts should remain untracked.
+Ground-truth files may be stored alongside demo inputs so matching results can be checked against known duplicate relationships. 
 
 ## Fuzzy Matching
 
