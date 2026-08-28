@@ -69,6 +69,25 @@ By default, the tool creates:
 
 Custom output paths can be supplied with `--output-clean`, `--output-duplicates`, and `--output-review`.
 
+Generated run outputs are intentionally not tracked in Git. Reproducible demo and test fixtures may be committed under `tests/` when they are part of the documented test suite rather than transient output.
+
+## Demo and Test Fixtures
+
+Small synthetic datasets may be included under `tests/` to support reproducible demonstrations and validation.
+
+For example, the real-estate demo fixture is intended to exercise:
+
+- exact duplicates
+- case and whitespace normalization
+- phone-number formatting differences
+- address variations
+- name and email typos
+- company-name abbreviation or punctuation differences
+- missing fields
+- multi-field fuzzy matches
+
+Ground-truth files may be stored alongside demo inputs so matching results can be checked against known duplicate relationships. Generated cleaned files, review reports, benchmark outputs, and other run artifacts should remain untracked.
+
 ## Fuzzy Matching
 
 Fuzzy mode normalizes common name, email, phone, and address fields before comparing records.
