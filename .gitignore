@@ -19,11 +19,14 @@ duplicates_review.csv
 manual_review.csv
 output/
 
+# Generated test and benchmark runs
+**/run_exact/
+**/run_fuzzy/
+**/run_full/
+**/benchmark_output/
+
 # Local working/test data
-sample_data/.venv/
-__pycache__/
-*.pyc
-cleaned_output.csv
-duplicates_review.csv
 sample_data/
 
+# Intentional demo/test fixtures under tests/ are tracked unless
+# they match one of the generated-output patterns above.
