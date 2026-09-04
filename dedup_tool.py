@@ -572,7 +572,14 @@ def main() -> int:
         phone_col = first_existing_column(df.columns, DEFAULT_PHONE_COLUMNS)
         address_col = first_existing_column(df.columns, DEFAULT_ADDRESS_COLUMNS)
 
-        if not any([name_col, first_name_col, last_name_col, phone_col, address_col]):
+        if not any([
+            name_col,
+            first_name_col,
+            last_name_col,
+            email_col,
+            phone_col,
+            address_col,
+        ]):
             print(
                 "Fuzzy mode could not find likely matching columns. "
                 "Add columns like name, email, phone, or address.",
