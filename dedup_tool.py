@@ -277,6 +277,7 @@ def fuzzy_dedup(
         best_email_domain_match = False
         best_email_local_score = 0
         best_email_score = 0.0
+        best_phone_match = False
         best_address_match = False
 
         for kept_idx in keep_indices:
