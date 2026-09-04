@@ -573,10 +573,12 @@ def main() -> int:
         phone_col = first_existing_column(df.columns, DEFAULT_PHONE_COLUMNS)
         address_col = first_existing_column(df.columns, DEFAULT_ADDRESS_COLUMNS)
 
+        has_name_source = bool(
+            name_col or (first_name_col and last_name_col)
+        )
+
         if not any([
-            name_col,
-            first_name_col,
-            last_name_col,
+            has_name_source,
             email_col,
             phone_col,
             address_col,
@@ -611,11 +613,17 @@ def main() -> int:
 
     print("\nDone.")
     print("--- RESULTS ---")
-    print(f"Original rows:        {len(df):,}")
-    print(f"Clean output rows:    {len(cleaned):,}")
-    print(f"Duplicates removed:   {len(duplicates):,}")
-    print(f"Manual review rows:   {len(review_rows):,}")
-    print(f"Total flagged:        {len(duplicates) + len(review_rows):,}")
+    print(f"Original rows:                 {len(df):,}")
+    print(f"Automatic duplicates removed:  {len(duplicates):,}")
+    print(f"Rows retained in output:       {len(cleaned):,}")
+    print(f"Manual review candidates:      {len(review_rows):,}")
+    print(f"Total records flagged:         {len(duplicates) + len(review_rows):,}")
+
+    if len(review_rows) > 0:
+        print(
+            "\nNote: Manual-review candidates are included in "
+            "'Rows retained in output' because they were not removed automatically."
+        )
 
     print("\n--- OUTPUT FILES ---")
     print(f"Clean file:           {clean_path}")
