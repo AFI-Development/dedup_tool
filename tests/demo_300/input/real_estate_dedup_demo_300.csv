@@ -1,0 +1,301 @@
+﻿ID,Company Name,First Name,Last Name,Title,Phone Number,Email,Street Address,City,State,ZIP Code,Lead Source,Market Segment
+RE-0218,Greenfield Realty Group,Mason,Webb,Commercial Broker,(609) 555-9066,mason.webb.218@greenfieldrealtygr.example.com,456 Market Ln,New York,NY,10011,Property Portal,Investment
+RE-0184,Urban Nest Realty,Levi,Powell,Leasing Specialist,(610) 555-7808,levi.powell.184@urbannestrealty.example.com,818 Washington Pl,Newark,NJ,07102,Networking,Commercial
+RE-0146,Beacon Commercial Realty,Elena,Foster,Transaction Coordinator,(848) 555-6402,elena.foster.146@beaconcommercialre.example.com,12 Oak Pl,Montclair,NJ,07042,Referral,Commercial
+RE-0298,Parkside Properties,Levi,Gardner,Transaction Coordinator,856-555-9473,levi.gardner.229@parksideproperties.example.com,973 Highland Ave,Newark,NJ,07102,Property Portal,Residential
+RE-0132,Oak & Main Realty,Connor,Collins,Regional Property Manager,(201) 555-5884,connor.collins.132@oakmainrealty.example.com,334 Chestnut Dr,Parsippany,NJ,07054,Website,Property Management
+RE-0005,Urban Nest Residential,Ruby,Bishop,Managing Broker,(856) 555-1185,ruby.bishop.5@urbannestresidenti.example.com,245 Market Ln,Bethlehem,PA,18018,Property Portal,Residential
+RE-0041,Evergreen Real Estate Partners,Adrian,Spencer,Real Estate Agent,(848) 555-2517,adrian.spencer.41@evergreenrealestat.example.com,957 Market Pl,New York,NY,10011,Open House,Residential
+RE-0074,Ironwood Homes,Henry,Bennett,Realtor,(908) 555-3738,henry.bennett.74@ironwoodhomes.example.com,548 Franklin Rd,Parsippany,NJ,07054,Property Portal,Residential
+RE-0082,Redwood Property Advisors,Amelia,Stone,Realtor,(732) 555-4034,amelia.stone.82@redwoodpropertyadv.example.com,924 Park Dr,Jersey City,NJ,07302,Open House,Residential
+RE-0186,Riverbend Property Advisors,Audrey,Wells,Realtor,(201) 555-7882,audrey.wells.186@riverbendpropertya.example.com,912 Prospect Ln,Jersey City,NJ,07302,Open House,Residential
+RE-0233,Summit Property Group,Daniel,Morgan,Investment Sales Associate,(856) 555-8030,daniel.morgan.190@summitpropertygrou.example.com,120 Lincoln Pl,Stamford,CT,06901,Referral,Property Management
+RE-0040,Keystone Realty,Aria,Bennett,Transaction Coordinator,(862) 555-2480,aria.bennett.40@keystonerealty.example.com,910 Lake Rd,Newark,NJ,07102,Networking,Commercial
+RE-0048,Blue Ridge Property Advisors,Levi,Peterson,Investment Sales Associate,(848) 555-2776,levi.peterson.48@blueridgepropertya.example.com,306 Center Blvd,Parsippany,NJ,07054,Website,Residential
+RE-0188,Greenfield Property Group,Eli,Parker,Investment Sales Associate,(862) 555-7956,eli.parker.188@greenfieldproperty.example.com,26 Pine Pl,Morristown,NJ,07960,Past Client,Residential
+RE-0075,Beacon Homes,Wyatt,Carter,Buyer's Agent,(610) 555-3775,wyatt.carter.75@beaconhomes.example.com,595 Lake Pl,Jersey City,NJ,07302,Networking,Property Management
+RE-0176,Stonebridge Real Estate,Owen,Stone,Regional Property Manager,(732) 555-7512,owen.stone.176@stonebridgerealest.example.com,442 Walnut Way,King of Prussia,PA,19406,Past Client,Residential
+RE-0299,Vista Properties,Maya,Freeman,Leasing Specialist,(201) 555-7290,,160 Oak St,Parsippany,NJ,07054,Networking,Investment
+RE-0287,Greenfield Properties,Audrey,Ross,Real Estate Agent,856-555-4922,audrey.ross.106@greenfieldproperti.example.com,92 Chestnut Pl,Parsippany,NJ,07054,Past Client,Residential
+RE-0261,Oak & Main Homes,Sophia,Brooks,Leasing Specialist,(267) 555-6994,sophia.brooks.162@oakmainhomes.example.com,764 Cedar Ave,Parsippany,NJ,07054,Referral,Commercial
+RE-0171,Crescent Property Advisors,James,Parker,Transaction Coordinator,(862) 555-7327,james.parker.171@crescentpropertyad.example.com,207 Park Ln,Allentown,PA,18101,MLS Inquiry,Residential
+RE-0266,Beacon Commercial Realty,Levi,Hughes,Listing Agent,(610) 555-5699,levi.hughes.127@beaconcommercialre.example.com,99 Park Ln,Jersey City,NJ,07302,Property Portal,Residential
+RE-0144,Greenfield Properties,Levi,Myers,Realtor,(610) 555-6328,levi.myers.144@greenfieldproperti.example.com,898 Madison Dr,New York,NY,10011,Past Client,Residential
+RE-0249,Keystone Realty,Aria,Bennett,Transaction Coordinator,8625552480,aria.bennett.40@keystonerealty.example.com,910 Lake Rd,Newark,NJ,07102,Networking,Commercial
+RE-0078,PrimePath Homes,Olivia,Hughes,Real Estate Agent,(609) 555-3886,olivia.hughes.78@primepathhomes.example.com,736 Market Dr,Morristown,NJ,07960,Past Client,Residential
+RE-0055,Parkside Residential,Amelia,Holland,Real Estate Consultant,(862) 555-3035,amelia.holland.55@parksideresidentia.example.com,635 Cedar Pl,King of Prussia,PA,19406,Property Portal,Investment
+RE-0010,Cedar Lane Real Estate Partners,Aaron,Howard,Real Estate Consultant,(267) 555-1370,aaron.howard.10@cedarlanerealestat.example.com,480 Jefferson Pl,Brooklyn,NY,11201,Open House,Commercial
+RE-0030,BrightStone Real Estate,Ella,Morgan,Real Estate Agent,(215) 555-2110,ella.morgan.30@brightstonerealest.example.com,440 River Way,King of Prussia,PA,19406,Website,Residential
+RE-0073,Cornerstone Commercial Realty,Chloe,Bishop,Commercial Broker,(610) 555-3701,chloe.bishop.73@cornerstonecommerc.example.com,501 Chestnut Rd,Allentown,PA,18101,Past Client,Residential
+RE-0029,Northstar Real Estate Partners,Samuel,Murphy,Real Estate Consultant,(201) 555-2073,samuel.murphy.29@northstarrealestat.example.com,393 Lake Way,White Plains,NY,10601,Referral,Residential
+RE-0183,Stonebridge Homes,Elena,Bennett,Listing Agent,(848) 555-7771,elena.bennett.183@stonebridgehomes.example.com,771 Main Ln,Easton,PA,18042,Past Client,Property Management
+RE-0189,Granite Properties,Ethan,Coleman,Leasing Specialist,(856) 555-7993,ethan.coleman.189@graniteproperties.example.com,73 Cedar Pl,Parsippany,NJ,07054,Past Client,Property Management
+RE-0194,Redwood Homes,Olivia,Kelly,Acquisitions Manager,(862) 555-8178,olivia.kelly.194@redwoodhomes.example.com,308 Maple Blvd,Brooklyn,NY,11201,MLS Inquiry,Residential
+RE-0283,OAK & MAIN REALTY,Connor,Collins,Regional Property Manager,2015555884,connor.collins.132@oakmainrealty.example.net,334 Chestnut Dr,Parsippany,NJ,07054,Website,Property Management
+RE-0203,Oak & Main Realty Group,Gabriel,Hamilton,Director of Leasing,(848) 555-8511,gabriel.hamilton.203@oakmainrealtygroup.example.com,731 Broad Pl,King of Prussia,PA,19406,Past Client,Commercial
+RE-0058,Vista Property Advisors,Thomas,Walsh,Director of Leasing,(201) 555-3146,thomas.walsh.58@vistapropertyadvis.example.com,776 Chestnut St,Brooklyn,NY,11201,MLS Inquiry,Commercial
+RE-0177,Harbor Residential,Sarah,Kelly,Buyer's Agent,(973) 555-7549,sarah.kelly.177@harborresidential.example.com,489 Chestnut Ave,Hoboken,NJ,07030,Past Client,Residential
+RE-0136,Riverbend Real Estate,Sebastian,Hughes,Realtor,(862) 555-6032,sebastian.hughes.136@riverbendrealestat.example.com,522 Maple Blvd,King of Prussia,PA,19406,Past Client,Property Management
+RE-0158,Beacon Property Advisors,Caleb,James,Real Estate Agent,(609) 555-6846,caleb.james.158@beaconpropertyadvi.example.com,576 Madison Rd,Allentown,PA,18101,Referral,Property Management
+RE-0294,Greenfield Property Group,Sebastian,Barertt,Real Estate Consultant,(862) 555-5736,sebastian.barrett.128@greenfieldproperty.example.com,146 Washington St,Hackensack,NJ,07601,MLS Inquiry,Investment
+RE-0051,Beacon Homes,Ella,Hamilton,Realtor,(973) 555-2887,ella.hamilton.51@beaconhomes.example.com,447 Main Pl,Stamford,CT,06901,Open House,Investment
+RE-0200,Summit Properties,Thomas,Walsh,Real Estate Agent,(201) 555-8400,thomas.walsh.200@summitproperties.example.com,590 Washington Way,Philadelphia,PA,19103,Property Portal,Commercial
+RE-0214,MetroPoint Realty Group,Olivia,Ross,Regional Property Manager,(609) 555-8918,olivia.ross.214@metropointrealtygr.example.com,268 Cedar Rd,Newark,NJ,07102,Website,Residential
+RE-0190,Summit Property Group,Daniel,Morgan,Investment Sales Associate,(856) 555-8030,daniel.morgan.190@summitpropertygrou.example.com,120 Lincoln Pl,Stamford,CT,06901,Referral,Property Management
+RE-0247,Summit Realty Group,Hannah,Holland,Realtor,(609) 555-2998,hannah.holland.54@summitrealtygroup.example.com,588 Oak Dr,Stamford,CT,06901,Open House,Property Management
+RE-0260,Maple Street Property Group,Victoria,Hamitlon,Managing Broker,(484) 555-8807,victoria.hamilton.211@maplestreetpropert.example.com,127 Franklin Way,Parsippany,NJ,07054,Past Client,Residential
+RE-0170,Vista Properties,Maya,Freeman,Leasing Specialist,(201) 555-7290,maya.freeman.170@vistaproperties.example.com,160 Oak St,Parsippany,NJ,07054,Networking,Investment
+RE-0246,Keystone Real Estate,Aaron,Ward,Transaction Coordinator,215-555-8104,aaron.ward.192@keystonerealestate.example.com,214 Broad Ave,Stamford,CT,06901,Referral,Investment
+RE-0282,  KEYSTONE PROPERTY GROUP ,ella,GARDNER,Real Estate Agent,(732) 555-2036,ELLA.GARDNER.28@KEYSTONEPROPERTYGR.EXAMPLE.COM,346 Lake Dr,Montclair,NJ,07042,Website,Commercial
+RE-0060,Crescent Properties,Abigail,Powell,Buyer's Agent,(973) 555-3220,abigail.powell.60@crescentproperties.example.com,870 Lincoln Pl,Bethlehem,PA,18018,Referral,Residential
+RE-0038,Vista Property Group,Eli,Cooper,Property Manager,(267) 555-2406,eli.cooper.38@vistapropertygroup.example.com,816 Broad Blvd,Brooklyn,NY,11201,Networking,Residential
+RE-0037,Oak & Main Real Estate Partners,James,Holland,Director of Leasing,(609) 555-2369,james.holland.37@oakmainrealestatep.example.com,769 River St,Doylestown,PA,18901,MLS Inquiry,Residential
+RE-0187,Evergreen Realty,Amelia,Myers,Transaction Coordinator,(201) 555-7919,amelia.myers.187@evergreenrealty.example.com,959 Lincoln Pl,Brooklyn,NY,11201,Website,Investment
+RE-0016,Landmark Property Advisors,Natalie,Hamilton,Acquisitions Manager,(862) 555-1592,natalie.hamilton.16@landmarkpropertyad.example.com,762 Madison Dr,Jersey City,NJ,07302,Open House,Residential
+RE-0199,Meadowbrook Property Advisors,Adrian,Coleman,Director of Leasing,(215) 555-8363,adrian.coleman.199@meadowbrookpropert.example.com,543 Prospect Ave,Philadelphia,PA,19103,Networking,Residential
+RE-0160,Oak & Main Real Estate Partners,Amelia,Murphy,Property Manager,(609) 555-6920,amelia.murphy.160@oakmainrealestatep.example.com,670 Lake Ln,Hackensack,NJ,07601,Networking,Residential
+RE-0209,Silver Key Realty Group,Elena,Warren,Acquisitions Manager,(609) 555-8733,elena.warren.209@silverkeyrealtygro.example.com,33 Washington Dr,Doylestown,PA,18901,Open House,Residential
+RE-0284,  KEYSTONE REAL ESTATE ,chloe,BISHOP,Listing Agent,(201) 555-5218,CHLOE.BISHOP.114@KEYSTONEREALESTATE.EXAMPLE.COM,468 Center Pl,Princeton,NJ,08540,Open House,Residential
+RE-0118,MetroPoint Real Estate,Nathan,Price,Real Estate Consultant,(908) 555-5366,nathan.price.118@metropointrealesta.example.com,656 Washington Pl,King of Prussia,PA,19406,Networking,Residential
+RE-0213,Vista Homes,Mia,Howard,Broker Associate,(215) 555-8881,mia.howard.213@vistahomes.example.com,221 Franklin Ave,Montclair,NJ,07042,Open House,Property Management
+RE-0197,Greenfield Realty,Natalie,Barrett,Real Estate Consultant,(609) 555-8289,natalie.barrett.197@greenfieldrealty.example.com,449 Main Way,Easton,PA,18042,Referral,Property Management
+RE-0006,Riverbend Commercial Realty,Victoria,Ward,Commercial Broker,(732) 555-1222,victoria.ward.6@riverbendcommercia.example.com,292 Franklin St,Jersey City,NJ,07302,Website,Property Management
+RE-0093,Silver Key Residential,Daniel,Spencer,Managing Broker,(732) 555-4441,daniel.spencer.93@silverkeyresidenti.example.com,461 Broad Dr,Montclair,NJ,07042,Property Portal,Commercial
+RE-0193,Stonebridge Realty Group,Harper,Brooks,Buyer's Agent,(973) 555-8141,harper.brooks.193@stonebridgerealtyg.example.com,261 Madison Blvd,Jersey City,NJ,07302,MLS Inquiry,Investment
+RE-0113,MetroPoint Commercial Realty,Aaron,Bailey,Commercial Broker,(848) 555-5181,aaron.bailey.113@metropointcommerci.example.com,421 Franklin Dr,Stamford,CT,06901,Networking,Residential
+RE-0098,Maple Street Property Group,Benjamin,Hughes,Commercial Broker,(484) 555-4626,benjamin.hughes.98@maplestreetpropert.example.com,696 Lincoln Blvd,Princeton,NJ,08540,Property Portal,Residential
+RE-0043,Harbor Real Estate,Miles,Murphy,Regional Property Manager,(908) 555-2591,miles.murphy.43@harborrealestate.example.com,71 Market Rd,Parsippany,NJ,07054,Networking,Residential
+RE-0289,Blue Ridge Property Advisors,Levi,Peterson,Investment Sales Associate,,levi.peterson.48@blueridgepropertya.example.com,306 Center Blvd,Parsippany,NJ,07054,Website,Residential
+RE-0182,PrimePath Property Group,Henry,Collins,Listing Agent,(610) 555-7734,henry.collins.182@primepathpropertyg.example.com,724 Pine St,White Plains,NY,10601,Property Portal,Investment
+RE-0026,Meadowbrook Residential,Connor,Carter,Real Estate Agent,(201) 555-1962,connor.carter.26@meadowbrookresiden.example.com,252 Oak Dr,Doylestown,PA,18901,Past Client,Residential
+RE-0064,Pinnacle Commercial Realty,Ethan,Hughes,Listing Agent,(856) 555-3368,ethan.hughes.64@pinnaclecommercial.example.com,78 Franklin Dr,Doylestown,PA,18901,Website,Residential
+RE-0139,Stonebridge Real Estate Partners,Maya,Stone,Commercial Broker,(610) 555-6143,maya.stone.139@stonebridgerealest.example.com,663 Washington Way,Jersey City,NJ,07302,Past Client,Commercial
+RE-0056,Riverbend Homes,Isaac,Porter,Regional Property Manager,(609) 555-3072,isaac.porter.56@riverbendhomes.example.com,682 Prospect Pl,Brooklyn,NY,11201,Referral,Residential
+RE-0204,Redwood Properties,Ethan,Spencer,Real Estate Consultant,(610) 555-8548,ethan.spencer.204@redwoodproperties.example.com,778 Main Ln,Newark,NJ,07102,Referral,Investment
+RE-0148,MetroPoint Real Estate Partners,Hannah,Russell,Transaction Coordinator,(267) 555-6476,hannah.russell.148@metropointrealesta.example.com,106 Pine Way,Morristown,NJ,07960,Open House,Residential
+RE-0191,Keystone Residential,Emma,Ross,Regional Property Manager,(215) 555-8067,emma.ross.191@keystoneresidentia.example.com,167 Market Ave,Easton,PA,18042,Open House,Residential
+RE-0212,Northstar Real Estate,Alexander,Russell,Listing Agent,(848) 555-8844,alexander.russell.212@northstarrealestat.example.com,174 Franklin Way,King of Prussia,PA,19406,Past Client,Residential
+RE-0100,Redwood Realty,Aria,Bailey,Broker Associate,(215) 555-4700,aria.bailey.100@redwoodrealty.example.com,790 Lake Blvd,Montclair,NJ,07042,Property Portal,Commercial
+RE-0152,Evergreen Property Advisors,Henry,Powell,Realtor,(908) 555-6624,henry.powell.152@evergreenpropertya.example.com,294 Walnut Rd,Doylestown,PA,18901,MLS Inquiry,Commercial
+RE-0264,Silver Key Property Advisors,Isabella,Stone,Property Manager,,isabella.stone.172@silverkeypropertya.example.com,254 Madison Ave,Doylestown,PA,18901,Open House,Residential
+RE-0262,Summit Properties,Thomas,Walsh,Real Estate Agent,201-555-8400,thomas.walsh.200@summitproperties.example.com,590 Washington Way,Philadelphia,PA,19103,Property Portal,Commercial
+RE-0175,Silver Key Real Estate Partners,Natalie,Murray,Real Estate Consultant,(856) 555-7475,natalie.murray.175@silverkeyrealestat.example.com,395 Franklin Way,Newark,NJ,07102,Past Client,Investment
+RE-0049,Stonebridge Realty,Sarah,Carter,Buyer's Agent,(973) 555-2813,sarah.carter.49@stonebridgerealty.example.com,353 Cedar Pl,Montclair,NJ,07042,Past Client,Residential
+RE-0253,MetroPoint Residential,Dylan,Russell,Property Manager,201-555-9251,dylan.russell.223@metropointresident.example.com,691 Walnut Ln,New York,NY,10011,Property Portal,Residential
+RE-0102,Stonebridge Commercial Realty,Isabella,Murray,Investment Sales Associate,(215) 555-4774,isabella.murray.102@stonebridgecommerc.example.com,884 Madison Ave,Easton,PA,18042,Referral,Residential
+RE-0192,Keystone Real Estate,Aaron,Ward,Transaction Coordinator,(215) 555-8104,aaron.ward.192@keystonerealestate.example.com,214 Broad Ave,Stamford,CT,06901,Referral,Investment
+RE-0059,MetroPoint Commercial Realty,Julia,Dunn,Broker Associate,(732) 555-3183,julia.dunn.59@metropointcommerci.example.com,823 Lake Ln,King of Prussia,PA,19406,Open House,Residential
+RE-0018,Granite Real Estate Partners,Isabella,Myers,Listing Agent,(856) 555-1666,isabella.myers.18@graniterealestatep.example.com,856 Highland Blvd,Princeton,NJ,08540,Past Client,Investment
+RE-0128,Greenfield Property Group,Sebastian,Barrett,Real Estate Consultant,(862) 555-5736,sebastian.barrett.128@greenfieldproperty.example.com,146 Washington St,Hackensack,NJ,07601,MLS Inquiry,Investment
+RE-0028,Keystone Property Group,Ella,Gardner,Real Estate Agent,(732) 555-2036,ella.gardner.28@keystonepropertygr.example.com,346 Lake Dr,Montclair,NJ,07042,Website,Commercial
+RE-0111,Blue Ridge Real Estate Partners,Naomi,Gray,Director of Leasing,(484) 555-5107,naomi.gray.111@blueridgerealestat.example.com,327 Chestnut Pl,Morristown,NJ,07960,Website,Property Management
+RE-0235,Vista Commercial Realty,Miles,Russell,Regional Property Manager,2675553923,miles.russell.79@vistacommercialrea.example.com,783 Madison Ln,Newark,NJ,07102,Networking,Residential
+RE-0179,Parkside Real Estate,Elena,Howard,Transaction Coordinator,(732) 555-7623,elena.howard.179@parksiderealestate.example.com,583 Park Ave,Jersey City,NJ,07302,Past Client,Residential
+RE-0208,Granite Residential,Claire,Walsh,Realtor,(267) 555-8696,claire.walsh.208@graniteresidential.example.com,966 Maple Blvd,Bethlehem,PA,18018,MLS Inquiry,Commercial
+RE-0242,Summit Properties,Thomas,Hayes,Regional Property Manager,(215) 555-4071,thomas.hayes.83@summitproperties.example.com,971 Center St,King of Prussia,PA,19406,Open House,Investment
+RE-0291,  IRONWOOD PROPERTY ADVISORS ,wyatt,HAMILTON,Acquisitions Manager,(908) 555-4589,WYATT.HAMILTON.97@IRONWOODPROPERTYAD.EXAMPLE.COM,649 Highland Pl,Easton,PA,18042,Website,Residential
+RE-0252,Beacon Realty Group,Samuel,Sullivan,Acquisitions Manager,,samuel.sullivan.88@beaconrealtygroup.example.com,226 Washington Pl,Doylestown,PA,18901,Past Client,Commercial
+RE-0271,Summit Real Estate,Claire,Murray,Director of Leasing,9085558215,claire.murray.195@summitrealestate.example.com,355 Madison Boulevard,Doylestown,PA,18901,Website,Investment
+RE-0231,Evergreen Properties,Grace,Ward,Property Manager,4845554885,grace.ward.105@evergreenpropertie.example.com,45 Center Way,Newark,NJ,07102,Open House,Residential
+RE-0017,Pinnacle Residential,Leah,Price,Realtor,(215) 555-1629,leah.price.17@pinnacleresidentia.example.com,809 River Rd,White Plains,NY,10601,Website,Residential
+RE-0027,Pinnacle Homes,Natalie,Price,Managing Broker,(201) 555-1999,natalie.price.27@pinnaclehomes.example.com,299 Market Ave,Allentown,PA,18101,Referral,Residential
+RE-0153,Oak & Main Commercial Realty,Thomas,Ross,Investment Sales Associate,(848) 555-6661,thomas.ross.153@oakmaincommercialr.example.com,341 Center Way,Philadelphia,PA,19103,Website,Investment
+RE-0072,Landmark Real Estate Partners,Connor,Ward,Realtor,(732) 555-3664,connor.ward.72@landmarkrealestate.example.com,454 Center Blvd,Morristown,NJ,07960,Open House,Residential
+RE-0116,Horizon Commercial Realty,Sophia,Hunter,Regional Property Manager,(973) 555-5292,sophia.hunter.116@horizoncommercialr.example.com,562 Lincoln Blvd,Parsippany,NJ,07054,Past Client,Residential
+RE-0066,Beacon Real Estate Partners,James,Richardson,Realtor,(908) 555-3442,james.richardson.66@beaconrealestatepa.example.com,172 Park Rd,White Plains,NY,10601,Website,Residential
+RE-0130,Evergreen Property Group,Olivia,Bishop,Leasing Specialist,(201) 555-5810,olivia.bishop.130@evergreenpropertyg.example.com,240 Main Ave,Allentown,PA,18101,Website,Residential
+RE-0268,  MEADOWBROOK HOMES ,hannah,HOLLAND,Acquisitions Manager,(267) 555-2147,HANNAH.HOLLAND.31@MEADOWBROOKHOMES.EXAMPLE.COM,487 Oak St,Morristown,NJ,07960,Networking,Property Management
+RE-0013,PrimePath Properties,Zoe,Coleman,Investment Sales Associate,(862) 555-1481,zoe.coleman.13@primepathpropertie.example.com,621 Highland Blvd,Parsippany,NJ,07054,Networking,Residential
+RE-0168,Silver Key Homes,Nathan,Diaz,Realtor,(215) 555-7216,nathan.diaz.168@silverkeyhomes.example.com,66 Lincoln Way,Princeton,NJ,08540,Open House,Residential
+RE-0121,MetroPoint Real Estate,Ella,Griffin,Investment Sales Associate,(856) 555-5477,ella.griffin.121@metropointrealesta.example.com,797 Market St,Philadelphia,PA,19103,Past Client,Residential
+RE-0079,Vista Commercial Realty,Miles,Russell,Regional Property Manager,(267) 555-3923,miles.russell.79@vistacommercialrea.example.com,783 Madison Ln,Newark,NJ,07102,Networking,Residential
+RE-0292,PrimePath Real Estate,Mia,Wells,Realtor,4845552924,mia.wells.52@primepathrealestat.example.com,494 Highland Avenue,Bethlehem,PA,18018,Past Client,Commercial
+RE-0039,Fairview Realty Group,Michael,Howard,Property Manager,(215) 555-2443,michael.howard.39@fairviewrealtygrou.example.com,863 Washington Dr,Easton,PA,18042,Website,Commercial
+RE-0095,Keystone Real Estate Partners,Naomi,Bryant,Investment Sales Associate,(201) 555-4515,naomi.bryant.95@keystonerealestate.example.com,555 Walnut Dr,Hoboken,NJ,07030,Referral,Residential
+RE-0275,PrimePath Real Estate,Mia,Wells,Realtor,(484) 555-2924,mia.wells.52@primepathrealestat.example.com,494 Highland Ave,Bethlehem,PA,18018,Past Client,Commercial
+RE-0269,Redwood Homes,Olivia,Kelly,Acquisitions Manager,(862) 555-8178,olivia.klely.194@redwoodhomes.example.com,308 Maple Blvd,Brooklyn,NY,11201,MLS Inquiry,Residential
+RE-0110,Stonebridge Residential,Julia,Bennett,Property Manager,(610) 555-5070,julia.bennett.110@stonebridgeresiden.example.com,280 Lake St,Brooklyn,NY,11201,MLS Inquiry,Commercial
+RE-0140,Fairview Real Estate,Abigail,Gray,Real Estate Agent,(609) 555-6180,abigail.gray.140@fairviewrealestate.example.com,710 Maple Ave,Allentown,PA,18101,Past Client,Property Management
+RE-0277,Stonebridge Realty,Adrian,Gardner,Property Manager,8565558474,adrian.gardner.202@stonebridgerealty.example.com,684 Washington Way,Hackensack,NJ,07601,Open House,Residential
+RE-0012,Stonebridge Homes,Olivia,Powell,Commercial Broker,(484) 555-1444,olivia.powell.12@stonebridgehomes.example.com,574 Highland Pl,Morristown,NJ,07960,MLS Inquiry,Residential
+RE-0217,BrightStone Homes,Lucas,Walsh,Real Estate Consultant,(609) 555-9029,lucas.walsh.217@brightstonehomes.example.com,409 Center Ave,Montclair,NJ,07042,Past Client,Investment
+RE-0142,Silver Key Residential,Ava,Holland,Realtor,(908) 555-6254,ava.holland.142@silverkeyresidenti.example.com,804 Chestnut Ave,Stamford,CT,06901,Property Portal,Commercial
+RE-0226,BrightStone Commercial Realty,Thomas,James,Managing Broker,(848) 555-9362,thomas.james.226@brightstonecommerc.example.com,832 Cedar Rd,Easton,PA,18042,Past Client,Commercial
+RE-0151,Urban Nest Properties,Elena,Bailey,Acquisitions Manager,(215) 555-6587,elena.bailey.151@urbannestpropertie.example.com,247 Prospect Ave,Philadelphia,PA,19103,Website,Commercial
+RE-0088,Beacon Realty Group,Samuel,Sullivan,Acquisitions Manager,(732) 555-4256,samuel.sullivan.88@beaconrealtygroup.example.com,226 Washington Pl,Doylestown,PA,18901,Past Client,Commercial
+RE-0155,Urban Nest Real Estate Partners,Elena,Collins,Managing Broker,(609) 555-6735,elena.collins.155@urbannestrealestat.example.com,435 River Pl,Brooklyn,NY,11201,Website,Investment
+RE-0259,Summit Property Advisors,Grace,Richardson,Investment Sales Associate,(862) 555-1777,grace.richardson.21@summitpropertyadvi.example.com,,Parsippany,NJ,07054,Open House,Commercial
+RE-0084,Evergreen Residential,Aaron,Hunter,Investment Sales Associate,(610) 555-4108,aaron.hunter.84@evergreenresidenti.example.com,38 Prospect Way,Bethlehem,PA,18018,MLS Inquiry,Residential
+RE-0091,Harbor Realty Group,Mia,Walsh,Investment Sales Associate,(609) 555-4367,mia.walsh.91@harborrealtygroup.example.com,367 Chestnut St,Hackensack,NJ,07601,Networking,Residential
+RE-0196,Evergreen Realty Group,Nathan,Bailey,Real Estate Agent,(732) 555-8252,nathan.bailey.196@evergreenrealtygro.example.com,402 Madison St,Montclair,NJ,07042,MLS Inquiry,Property Management
+RE-0150,Fairview Commercial Realty,Adrian,Coleman,Broker Associate,(862) 555-6550,adrian.coleman.150@fairviewcommercial.example.com,200 Walnut Ln,Doylestown,PA,18901,Website,Residential
+RE-0195,Summit Real Estate,Claire,Murray,Director of Leasing,(908) 555-8215,claire.murray.195@summitrealestate.example.com,355 Madison Blvd,Doylestown,PA,18901,Website,Investment
+RE-0062,Evergreen Homes,Lily,Hayes,Buyer's Agent,(201) 555-3294,lily.hayes.62@evergreenhomes.example.com,964 Prospect Blvd,Montclair,NJ,07042,Open House,Residential
+RE-0241,  SILVER KEY PROPERTY ADVISORS ,isabella,STONE,Property Manager,(610) 555-7364,ISABELLA.STONE.172@SILVERKEYPROPERTYA.EXAMPLE.COM,254 Madison Ave,Doylestown,PA,18901,Open House,Residential
+RE-0279,Stonebridge Commercial Realty,Isabella,Murray,Investment Sales Associate,2155554774,isabella.murray.102@stonebridgecommerc.example.com,884 Madison Ave,Easton,PA,18042,Referral,Residential
+RE-0161,Vista Homes,Sophia,Webb,Director of Leasing,(215) 555-6957,sophia.webb.161@vistahomes.example.com,717 Broad Blvd,Montclair,NJ,07042,MLS Inquiry,Residential
+RE-0008,Northstar Real Estate Partners,Natalie,Bishop,Leasing Specialist,(267) 555-1296,natalie.bishop.8@northstarrealestat.example.com,386 Prospect Pl,Allentown,PA,18101,Networking,Commercial
+RE-0149,Beacon Realty Group,Wyatt,Foster,Director of Leasing,(862) 555-6513,wyatt.foster.149@beaconrealtygroup.example.com,153 Market Blvd,Stamford,CT,06901,Networking,Residential
+RE-0206,Harbor Residential,Olivia,Price,Buyer's Agent,(862) 555-8622,olivia.price.206@harborresidential.example.com,872 Cedar Way,Bethlehem,PA,18018,Property Portal,Property Management
+RE-0086,Riverbend Real Estate,Nora,Parker,Acquisitions Manager,(610) 555-4182,nora.parker.86@riverbendrealestat.example.com,132 Lincoln Dr,White Plains,NY,10601,Networking,Residential
+RE-0094,Redwood Property Advisors,Henry,Webb,Director of Leasing,(215) 555-4478,henry.webb.94@redwoodpropertyadv.example.com,508 Lincoln Blvd,New York,NY,10011,MLS Inquiry,Residential
+RE-0215,BrightStone Commercial Realty,Lucas,Graham,Real Estate Agent,(848) 555-8955,lucas.graham.215@brightstonecommerc.example.com,315 Park Dr,Doylestown,PA,18901,MLS Inquiry,Residential
+RE-0061,Oak & Main Commercial Realty,Caleb,Bishop,Broker Associate,(201) 555-3257,caleb.bishop.61@oakmaincommercialr.example.com,917 Oak St,Hackensack,NJ,07601,Networking,Property Management
+RE-0019,Urban Nest Property Group,James,Webb,Real Estate Agent,(862) 555-1703,james.webb.19@urbannestpropertyg.example.com,903 Prospect Pl,Doylestown,PA,18901,Referral,Residential
+RE-0167,Vista Property Advisors,Samuel,Griffin,Real Estate Agent,(732) 555-7179,samuel.griffin.167@vistapropertyadvis.example.com,19 Park Ln,Montclair,NJ,07042,Website,Property Management
+RE-0162,Oak & Main Homes,Sophia,Brooks,Leasing Specialist,(267) 555-6994,sophia.brooks.162@oakmainhomes.example.com,764 Cedar Ave,Parsippany,NJ,07054,Referral,Commercial
+RE-0147,Fairview Realty Group,Mason,Wells,Investment Sales Associate,(973) 555-6439,mason.wells.147@fairviewrealtygrou.example.com,59 Oak Ln,Allentown,PA,18101,Networking,Residential
+RE-0300,Beacon Real Estate,Henry,Richardson,Broker Associate,8565554293,henry.richardson.89@beaconrealestate.example.com,273 Madison Avenue,Morristown,NJ,07960,Open House,Commercial
+RE-0107,Summit Property Group,Wyatt,Freeman,Buyer's Agent,(484) 555-4959,wyatt.freeman.107@summitpropertygrou.example.com,139 Highland Way,Hoboken,NJ,07030,Open House,Investment
+RE-0014,Ironwood Realty,Noah,Murray,Property Manager,(732) 555-1518,noah.murray.14@ironwoodrealty.example.com,668 Lake Way,Easton,PA,18042,Referral,Residential
+RE-0050,Evergreen Realty Group,Zoe,Warren,Director of Leasing,(856) 555-2850,zoe.warren.50@evergreenrealtygro.example.com,400 Center Ln,Allentown,PA,18101,Referral,Residential
+RE-0173,Silver Key Properties,Sebastian,Cooper,Acquisitions Manager,(215) 555-7401,sebastian.cooper.173@silverkeypropertie.example.com,301 Main Dr,Montclair,NJ,07042,Networking,Residential
+RE-0033,Urban Nest Residential,Adrian,Reed,Commercial Broker,(973) 555-2221,adrian.reed.33@urbannestresidenti.example.com,581 Chestnut Way,Parsippany,NJ,07054,Property Portal,Investment
+RE-0035,Urban Nest Real Estate Partners,Noah,Morgan,Buyer's Agent,(908) 555-2295,noah.morgan.35@urbannestrealestat.example.com,675 Washington Pl,Philadelphia,PA,19103,Open House,Property Management
+RE-0120,Redwood Residential,Owen,Brooks,Investment Sales Associate,(484) 555-5440,owen.brooks.120@redwoodresidential.example.com,750 Oak Blvd,Bethlehem,PA,18018,Networking,Commercial
+RE-0181,Northstar Property Group,Michael,Murphy,Commercial Broker,(609) 555-7697,michael.murphy.181@northstarpropertyg.example.com,677 Main St,New York,NY,10011,Past Client,Residential
+RE-0297,Blue Ridge Commercial Realty,Gabriel,Kelly,Transaction Coordinator,(215) 555-4552,gabriel.kelly.96@blueridgecommercia.example.com,602 Highland Blvd,Bethlehem,PA,18018,MLS Inquiry,Residential
+RE-0135,Northstar Property Advisors,Aaron,Collins,Regional Property Manager,(862) 555-5995,aaron.collins.135@northstarpropertya.example.com,475 River Dr,Easton,PA,18042,Networking,Residential
+RE-0053,Vista Homes,Amelia,Hunter,Real Estate Agent,(201) 555-2961,amelia.hunter.53@vistahomes.example.com,541 River Ave,Jersey City,NJ,07302,Property Portal,Residential
+RE-0081,Riverbend Commercial Realty,Grace,Walsh,Listing Agent,(732) 555-3997,grace.walsh.81@riverbendcommercia.example.com,877 Oak Rd,Brooklyn,NY,11201,Networking,Commercial
+RE-0280,Pinnacle Residential,Leah,Price,Realtor,215-555-1629,leah.price.17@pinnacleresidentia.example.com,809 River Rd,White Plains,NY,10601,Website,Residential
+RE-0295,Silver Key Real Estate Partners,Natalie,Murray,Real Estate Consultant,8565557475,natalie.murray.175@silverkeyrealestat.example.com,395 Franklin Way,Newark,NJ,07102,Past Client,Investment
+RE-0025,Maple Street Realty Group,Alexander,Walsh,Acquisitions Manager,(609) 555-1925,alexander.walsh.25@maplestreetrealtyg.example.com,205 Washington Ln,Hackensack,NJ,07601,Open House,Residential
+RE-0042,Silver Key Realty Group,Amelia,Myers,Acquisitions Manager,(267) 555-2554,amelia.myers.42@silverkeyrealtygro.example.com,24 Pine Pl,Princeton,NJ,08540,Property Portal,Investment
+RE-0293,Silver Key Realty Group,Elean,Warren,Acquisitions Manager,(609) 555-8733,elena.warren.209@silverkeyrealtygro.example.com,33 Washington Dr,Doylestown,PA,18901,Open House,Residential
+RE-0104,Evergreen Realty,Benjamin,Hunter,Regional Property Manager,(609) 555-4848,benjamin.hunter.104@evergreenrealty.example.com,978 Center Ave,Easton,PA,18042,Property Portal,Residential
+RE-0109,PrimePath Properties,Abigail,Ford,Acquisitions Manager,(856) 555-5033,abigail.ford.109@primepathpropertie.example.com,233 Chestnut Ln,Brooklyn,NY,11201,Open House,Residential
+RE-0070,Pinnacle Homes,Mia,Barrett,Broker Associate,(862) 555-3590,mia.barrett.70@pinnaclehomes.example.com,360 Park Dr,Montclair,NJ,07042,Referral,Residential
+RE-0023,Greenfield Commercial Realty,Julian,Barrett,Real Estate Agent,(856) 555-1851,julian.barrett.23@greenfieldcommerci.example.com,111 Park Ln,Stamford,CT,06901,Past Client,Residential
+RE-0180,Urban Nest Real Estate,Zoe,Gray,Realtor,(856) 555-7660,zoe.gray.180@urbannestrealestat.example.com,630 Walnut Ln,Philadelphia,PA,19103,Open House,Property Management
+RE-0108,Silver Key Real Estate Partners,Olivia,Ross,Broker Associate,(610) 555-4996,olivia.ross.108@silverkeyrealestat.example.com,186 Walnut Pl,Princeton,NJ,08540,Open House,Investment
+RE-0166,Evergreen Property Group,Harper,Walsh,Investment Sales Associate,(973) 555-7142,harper.walsh.166@evergreenpropertyg.example.com,952 Center Pl,Brooklyn,NY,11201,Networking,Investment
+RE-0243,Summit Real Estate,Claire,Murray,Director of Leasing,9085558215,claire.murray.195@summitrealestate.example.com,355 Madison Boulevard,Doylestown,PA,18901,Website,Investment
+RE-0272,Beacon Homes,Wyatt,Caretr,Buyer's Agent,(610) 555-3775,wyatt.carter.75@beaconhomes.example.com,595 Lake Pl,Jersey City,NJ,07302,Networking,Property Management
+RE-0205,Keystone Homes,Benjamin,Griffin,Transaction Coordinator,(215) 555-8585,benjamin.griffin.205@keystonehomes.example.com,825 Cedar Blvd,Allentown,PA,18101,Past Client,Property Management
+RE-0114,Keystone Real Estate,Chloe,Bishop,Listing Agent,(201) 555-5218,chloe.bishop.114@keystonerealestate.example.com,468 Center Pl,Princeton,NJ,08540,Open House,Residential
+RE-0290,Summit Property Group,Wyatt,Freeman,Buyer's Agent,4845554959,wyatt.freeman.107@summitpropertygrou.example.com,139 Highland Way,Hoboken,NJ,07030,Open House,Investment
+RE-0274,Redwood Realty,Amelia,Cooper,Real Estate Consultant,(856) 555-3479,amelia.cooper.67@redwoodrealty.example.com,219 Broad Rd,King of Prussia,PA,19406,MLS Inquiry,Investment
+RE-0254,RIVERBEND RE,Alexander,Haeys,Realtor,8625552665,alexander.hayes.45@riverbendrealestat.example.net,165 Center Street,King of Prussia,PA,19406,Website,Residential
+RE-0238,  FAIRVIEW REAL ESTATE ,abigail,GRAY,Real Estate Agent,(609) 555-6180,ABIGAIL.GRAY.140@FAIRVIEWREALESTATE.EXAMPLE.COM,710 Maple Ave,Allentown,PA,18101,Past Client,Property Management
+RE-0210,Horizon Property Group,Adrian,Coleman,Property Manager,(484) 555-8770,adrian.coleman.210@horizonpropertygro.example.com,80 Broad Way,King of Prussia,PA,19406,MLS Inquiry,Residential
+RE-0178,MetroPoint Real Estate,Leah,Ford,Listing Agent,(610) 555-7586,leah.ford.178@metropointrealesta.example.com,536 Broad Ln,Philadelphia,PA,19103,Website,Residential
+RE-0031,Meadowbrook Homes,Hannah,Holland,Acquisitions Manager,(267) 555-2147,hannah.holland.31@meadowbrookhomes.example.com,487 Oak St,Morristown,NJ,07960,Networking,Property Management
+RE-0156,Granite Property Advisors,Leah,Dunn,Broker Associate,(215) 555-6772,leah.dunn.156@granitepropertyadv.example.com,482 Pine Ln,Morristown,NJ,07960,Open House,Property Management
+RE-0165,PrimePath Homes,Hannah,Cooper,Director of Leasing,(484) 555-7105,hannah.cooper.165@primepathhomes.example.com,905 Walnut Way,Jersey City,NJ,07302,Website,Residential
+RE-0296,Urban Nest Residential,Adrian,Reed,Commercial Broker,(973) 555-2221,adrian.reed.33@urbannestresidenti.example.com,581 Chestnut Way,Parsippany,NJ,07054,Property Portal,Investment
+RE-0220,Landmark Realty Group,Henry,Graham,Regional Property Manager,(201) 555-9140,henry.graham.220@landmarkrealtygrou.example.com,550 Broad Pl,King of Prussia,PA,19406,Networking,Residential
+RE-0004,Parkside Homes,Maya,Collins,Regional Property Manager,(856) 555-1148,maya.collins.4@parksidehomes.example.com,198 Washington Dr,Allentown,PA,18101,Past Client,Residential
+RE-0045,Riverbend Real Estate,Alexander,Hayes,Realtor,(862) 555-2665,alexander.hayes.45@riverbendrealestat.example.com,165 Center St,King of Prussia,PA,19406,Website,Residential
+RE-0234,MetroPoint Commercial Realty,Aaron,Baiely,Commercial Broker,(848) 555-5181,aaron.bailey.113@metropointcommerci.example.com,421 Franklin Dr,Stamford,CT,06901,Networking,Residential
+RE-0022,Beacon Realty Group,Hannah,Spencer,Real Estate Consultant,(484) 555-1814,hannah.spencer.22@beaconrealtygroup.example.com,64 Chestnut St,Parsippany,NJ,07054,Website,Residential
+RE-0236,Riverbend Realty Grp.,Maya,Powell,Realtor,2015557068,maya.powell.164@riverbendrealtygro.example.com,858 Lincoln Ave,Philadelphia,PA,19103,Past Client,Commercial
+RE-0047,Greenfield Real Estate Partners,Abigail,Diaz,Real Estate Consultant,(484) 555-2739,abigail.diaz.47@greenfieldrealesta.example.com,259 Washington Pl,Montclair,NJ,07042,Networking,Residential
+RE-0007,MetroPoint Commercial Realty,Caleb,Ward,Transaction Coordinator,(973) 555-1259,caleb.ward.7@metropointcommerci.example.com,339 Walnut Blvd,Hoboken,NJ,07030,Website,Commercial
+RE-0240,PRIMEPATH PROPERTIES,Abigail,Ford,Acquisitions Manager,8565555033,abigail.ford.109@primepathpropertie.example.net,233 Chestnut Ln,Brooklyn,NY,11201,Open House,Residential
+RE-0143,Harbor Commercial Realty,Emma,Reed,Broker Associate,(484) 555-6291,emma.reed.143@harborcommercialre.example.com,851 Center Ln,Philadelphia,PA,19103,Open House,Residential
+RE-0106,Greenfield Properties,Audrey,Ross,Real Estate Agent,(856) 555-4922,audrey.ross.106@greenfieldproperti.example.com,92 Chestnut Pl,Parsippany,NJ,07054,Past Client,Residential
+RE-0009,Meadowbrook Property Advisors,Leah,Coleman,Realtor,(609) 555-1333,leah.coleman.9@meadowbrookpropert.example.com,433 Center Dr,Morristown,NJ,07960,Website,Property Management
+RE-0067,Redwood Realty,Amelia,Cooper,Real Estate Consultant,(856) 555-3479,amelia.cooper.67@redwoodrealty.example.com,219 Broad Rd,King of Prussia,PA,19406,MLS Inquiry,Investment
+RE-0021,Summit Property Advisors,Grace,Richardson,Investment Sales Associate,(862) 555-1777,grace.richardson.21@summitpropertyadvi.example.com,17 Jefferson Rd,Parsippany,NJ,07054,Open House,Commercial
+RE-0257,Ironwood Property Advisors,Wyatt,Hamilton,Acquisitions Manager,908-555-4589,wyatt.hamilton.97@ironwoodpropertyad.example.com,649 Highland Pl,Easton,PA,18042,Website,Residential
+RE-0207,Evergreen Properties,Owen,Cross,Acquisitions Manager,(610) 555-8659,owen.cross.207@evergreenpropertie.example.com,919 Market Blvd,Easton,PA,18042,Referral,Investment
+RE-0159,Landmark Real Estate Partners,Abigail,Stone,Real Estate Agent,(215) 555-6883,abigail.stone.159@landmarkrealestate.example.com,623 Jefferson Ave,White Plains,NY,10601,Networking,Residential
+RE-0122,Silver Key Property Advisors,Isaac,Gray,Regional Property Manager,(484) 555-5514,isaac.gray.122@silverkeypropertya.example.com,844 Madison Pl,Morristown,NJ,07960,Networking,Investment
+RE-0222,Meadowbrook Realty,Aria,Spencer,Real Estate Consultant,(973) 555-9214,aria.spencer.222@meadowbrookrealty.example.com,644 Chestnut Blvd,Doylestown,PA,18901,Website,Residential
+RE-0163,Urban Nest Properties,Mia,Ross,Leasing Specialist,(973) 555-7031,mia.ross.163@urbannestpropertie.example.com,811 Jefferson Dr,Allentown,PA,18101,Referral,Residential
+RE-0251,Pinnacle Properties,Calbe,Murphy,Investment Sales Associate,(862) 555-2332,caleb.murphy.36@pinnacleproperties.example.com,722 Center Way,Brooklyn,NY,11201,Website,Residential
+RE-0112,Horizon Real Estate,Ava,Hayes,Managing Broker,(267) 555-5144,ava.hayes.112@horizonrealestate.example.com,374 Park Pl,Brooklyn,NY,11201,Open House,Commercial
+RE-0270,Cornerstone Commercial Realty,Chloe,Bishpo,Commercial Broker,(610) 555-3701,chloe.bishop.73@cornerstonecommerc.example.com,501 Chestnut Rd,Allentown,PA,18101,Past Client,Residential
+RE-0224,Horizon Realty Group,Lily,Hamilton,Realtor,(908) 555-9288,lily.hamilton.224@horizonrealtygroup.example.com,738 Chestnut Dr,Montclair,NJ,07042,Referral,Residential
+RE-0256,MEADOWBROOK PROPERTY ADVISORS,Adrian,Colemna,Director of Leasing,2155558363,adrian.coleman.199@meadowbrookpropert.example.net,543 Prospect Ave,Philadelphia,PA,19103,Networking,Residential
+RE-0229,Parkside Properties,Levi,Gardner,Transaction Coordinator,(856) 555-9473,levi.gardner.229@parksideproperties.example.com,973 Highland Ave,Newark,NJ,07102,Property Portal,Residential
+RE-0069,Blue Ridge Property Group,Henry,Gray,Real Estate Consultant,(908) 555-3553,henry.gray.69@blueridgepropertyg.example.com,313 Market Pl,Jersey City,NJ,07302,Property Portal,Residential
+RE-0096,Blue Ridge Commercial Realty,Gabriel,Kelly,Transaction Coordinator,(215) 555-4552,gabriel.kelly.96@blueridgecommercia.example.com,602 Highland Blvd,Bethlehem,PA,18018,MLS Inquiry,Residential
+RE-0221,Cornerstone Property Advisors,Elena,Price,Regional Property Manager,(609) 555-9177,elena.price.221@cornerstonepropert.example.com,597 Center Ln,King of Prussia,PA,19406,Open House,Residential
+RE-0117,PrimePath Realty,Thomas,Holland,Real Estate Agent,(862) 555-5329,thomas.holland.117@primepathrealty.example.com,609 Maple Rd,Montclair,NJ,07042,Website,Property Management
+RE-0164,Riverbend Realty Group,Maya,Powell,Realtor,(201) 555-7068,maya.powell.164@riverbendrealtygro.example.com,858 Lincoln Ave,Philadelphia,PA,19103,Past Client,Commercial
+RE-0157,Parkside Realty,Michael,Murray,Acquisitions Manager,(908) 555-6809,michael.murray.157@parksiderealty.example.com,529 Cedar Blvd,Easton,PA,18042,Referral,Investment
+RE-0090,Keystone Realty Group,Michael,Murphy,Listing Agent,(609) 555-4330,michael.murphy.90@keystonerealtygrou.example.com,320 Broad Dr,Newark,NJ,07102,Property Portal,Residential
+RE-0273,Ironwood Realty,Noah,Murray,Property Manager,(732) 555-1518,noah.umrray.14@ironwoodrealty.example.com,668 Lake Way,Easton,PA,18042,Referral,Residential
+RE-0034,Redwood Property Group,Claire,Reed,Director of Leasing,(215) 555-2258,claire.reed.34@redwoodpropertygro.example.com,628 Maple Blvd,Hackensack,NJ,07601,Property Portal,Residential
+RE-0054,Summit Realty Group,Hannah,Holland,Realtor,(609) 555-2998,hannah.holland.54@summitrealtygroup.example.com,588 Oak Dr,Stamford,CT,06901,Open House,Property Management
+RE-0003,Ironwood Residential,Olivia,Holland,Buyer's Agent,(610) 555-1111,olivia.holland.3@ironwoodresidentia.example.com,151 Maple Ave,Newark,NJ,07102,Website,Residential
+RE-0267,Redwood Realty,Aemlia,Cooper,Real Estate Consultant,(856) 555-3479,amelia.cooper.67@redwoodrealty.example.com,219 Broad Rd,King of Prussia,PA,19406,MLS Inquiry,Investment
+RE-0216,Cornerstone Real Estate,Levi,Ward,Investment Sales Associate,(862) 555-8992,levi.ward.216@cornerstonerealest.example.com,362 Highland Pl,Newark,NJ,07102,MLS Inquiry,Investment
+RE-0087,Silver Key Homes,Victoria,Murphy,Buyer's Agent,(610) 555-4219,victoria.murphy.87@silverkeyhomes.example.com,179 Center Ln,Princeton,NJ,08540,Website,Residential
+RE-0092,Summit Real Estate Partners,Nora,Dunn,Regional Property Manager,(856) 555-4404,nora.dunn.92@summitrealestatepa.example.com,414 Park Ave,Princeton,NJ,08540,Referral,Property Management
+RE-0125,PrimePath Real Estate Partners,Noah,Lane,Realtor,(609) 555-5625,noah.lane.125@primepathrealestat.example.com,985 Cedar Blvd,Bethlehem,PA,18018,MLS Inquiry,Commercial
+RE-0228,Pinnacle Homes,Adrian,Bishop,Managing Broker,(973) 555-9436,adrian.bishop.228@pinnaclehomes.example.com,926 Market Ave,White Plains,NY,10601,Property Portal,Residential
+RE-0244,Horizon Real Estate,Ava,Hayes,Managing Broker,2675555144,ava.hayes.112@horizonrealestate.example.com,374 Park Pl,Brooklyn,NY,11201,Open House,Commercial
+RE-0063,Keystone Residential,Samuel,Cooper,Real Estate Consultant,(484) 555-3331,samuel.cooper.63@keystoneresidentia.example.com,31 Walnut Pl,Montclair,NJ,07042,MLS Inquiry,Residential
+RE-0124,MetroPoint Homes,Elena,Graham,Realtor,(609) 555-5588,elena.graham.124@metropointhomes.example.com,938 Lincoln Rd,Hackensack,NJ,07601,Open House,Residential
+RE-0174,Landmark Homes,Nora,Wells,Investment Sales Associate,(862) 555-7438,nora.wells.174@landmarkhomes.example.com,348 Lake Ave,Princeton,NJ,08540,Past Client,Residential
+RE-0105,Evergreen Properties,Grace,Ward,Property Manager,(484) 555-4885,grace.ward.105@evergreenpropertie.example.com,45 Center Way,Newark,NJ,07102,Open House,Residential
+RE-0265,Evergreen Real Estate Partners,Adrian,Spencer,Real Estate Agent,,adrian.spencer.41@evergreenrealestat.example.com,957 Market Pl,New York,NY,10011,Open House,Residential
+RE-0068,Riverbend Residential,Zoe,Coleman,Commercial Broker,(267) 555-3516,zoe.coleman.68@riverbendresidenti.example.com,266 River Ave,King of Prussia,PA,19406,Website,Residential
+RE-0219,Vista Property Advisors,Alexander,Spencer,Commercial Broker,(215) 555-9103,alexander.spencer.219@vistapropertyadvis.example.com,503 Chestnut Ave,Newark,NJ,07102,MLS Inquiry,Commercial
+RE-0230,Riverbend Properties,Maya,Graham,Buyer's Agent,(973) 555-9510,maya.graham.230@riverbendpropertie.example.com,40 Madison Blvd,New York,NY,10011,MLS Inquiry,Investment
+RE-0286,Northstar Property Advisors,Aaron,Collins,Regional Property Manager,(862) 555-5995,araon.collins.135@northstarpropertya.example.com,475 River Dr,Easton,PA,18042,Networking,Residential
+RE-0137,Riverbend Commercial Realty,Ava,Price,Listing Agent,(609) 555-6069,ava.price.137@riverbendcommercia.example.com,569 Madison Blvd,King of Prussia,PA,19406,Property Portal,Investment
+RE-0065,Landmark Property Advisors,Isaac,Freeman,Investment Sales Associate,(609) 555-3405,isaac.freeman.65@landmarkpropertyad.example.com,125 Oak Pl,Philadelphia,PA,19103,Open House,Property Management
+RE-0288,Redwood Property Advisors,Amelia,Stone,Realtor,(732) 555-4034,amelia.stone.82@redwoodpropertyadv.example.com,924 Park Dr,Jersey City,NJ,07302,Open House,Residential
+RE-0141,Ironwood Commercial Realty,Ava,Bryant,Regional Property Manager,(609) 555-6217,ava.bryant.141@ironwoodcommercial.example.com,757 Main Ave,Parsippany,NJ,07054,Property Portal,Property Management
+RE-0258,  REDWOOD REALTY ,amelia,COOPER,Real Estate Consultant,(856) 555-3479,AMELIA.COOPER.67@REDWOODREALTY.EXAMPLE.COM,219 Broad Rd,King of Prussia,PA,19406,MLS Inquiry,Investment
+RE-0127,Beacon Commercial Realty,Levi,Hughes,Listing Agent,(610) 555-5699,levi.hughes.127@beaconcommercialre.example.com,99 Park Ln,Jersey City,NJ,07302,Property Portal,Residential
+RE-0263,  BLUE RIDGE REAL ESTATE PARTNERS ,naomi,GRAY,Director of Leasing,(484) 555-5107,NAOMI.GRAY.111@BLUERIDGEREALESTAT.EXAMPLE.COM,327 Chestnut Pl,Morristown,NJ,07960,Website,Property Management
+RE-0002,Pinnacle Realty,Natalie,Bennett,Commercial Broker,(732) 555-1074,natalie.bennett.2@pinnaclerealty.example.com,104 Main Way,Hackensack,NJ,07601,Networking,Commercial
+RE-0103,Redwood Real Estate,Ava,Graham,Managing Broker,(973) 555-4811,ava.graham.103@redwoodrealestate.example.com,931 Prospect Rd,New York,NY,10011,Open House,Commercial
+RE-0057,Meadowbrook Commercial Realty,Evelyn,Hunter,Leasing Specialist,(973) 555-3109,evelyn.hunter.57@meadowbrookcommerc.example.com,729 Maple St,Easton,PA,18042,Property Portal,Residential
+RE-0032,Riverbend Property Advisors,Eli,Kelly,Property Manager,(610) 555-2184,eli.kelly.32@riverbendpropertya.example.com,534 Center Dr,Stamford,CT,06901,MLS Inquiry,Residential
+RE-0097,Ironwood Property Advisors,Wyatt,Hamilton,Acquisitions Manager,(908) 555-4589,wyatt.hamilton.97@ironwoodpropertyad.example.com,649 Highland Pl,Easton,PA,18042,Website,Residential
+RE-0255,Redwood Property Advisors,Amelia,Stone,Realtor,7325554034,amelia.stone.82@redwoodpropertyadv.example.com,924 Park Dr,Jersey City,NJ,07302,Open House,Residential
+RE-0129,Granite Realty,Wyatt,Wells,Real Estate Consultant,(610) 555-5773,wyatt.wells.129@graniterealty.example.com,193 Madison St,Brooklyn,NY,11201,Website,Residential
+RE-0131,Harbor Realty,Samuel,Dunn,Real Estate Consultant,(908) 555-5847,samuel.dunn.131@harborrealty.example.com,287 Chestnut Way,Hoboken,NJ,07030,Referral,Property Management
+RE-0036,Pinnacle Properties,Caleb,Murphy,Investment Sales Associate,(862) 555-2332,caleb.murphy.36@pinnacleproperties.example.com,722 Center Way,Brooklyn,NY,11201,Website,Residential
+RE-0134,Greenfield Real Estate Partners,Isaac,Foster,Transaction Coordinator,(201) 555-5958,isaac.foster.134@greenfieldrealesta.example.com,428 Prospect Ave,Stamford,CT,06901,Past Client,Residential
+RE-0080,Oak & Main Commercial Realty,Hannah,Ford,Property Manager,(856) 555-3960,hannah.ford.80@oakmaincommercialr.example.com,830 Main Rd,King of Prussia,PA,19406,MLS Inquiry,Residential
+RE-0015,Blue Ridge Commercial Realty,Elena,Hughes,Leasing Specialist,(908) 555-1555,elena.hughes.15@blueridgecommercia.example.com,715 Madison Ave,Stamford,CT,06901,MLS Inquiry,Commercial
+RE-0099,Cornerstone Realty Group,Grace,Griffin,Real Estate Agent,(973) 555-4663,grace.griffin.99@cornerstonerealtyg.example.com,743 Market Dr,Brooklyn,NY,11201,Networking,Residential
+RE-0227,Cedar Lane Residential,Noah,Sullivan,Broker Associate,(856) 555-9399,noah.sullivan.227@cedarlaneresidenti.example.com,879 Maple Ave,Hoboken,NJ,07030,Referral,Residential
+RE-0020,Urban Nest Real Estate Partners,Daniel,Murphy,Buyer's Agent,(201) 555-1740,daniel.murphy.20@urbannestrealestat.example.com,950 Maple Way,New York,NY,10011,Past Client,Commercial
+RE-0285,Greenfield Properties,Audrey,Ross,Real Estate Agent,(856) 555-4922,audrey.ross.016@greenfieldproperti.example.com,92 Chestnut Pl,Parsippany,NJ,07054,Past Client,Residential
+RE-0232,Northstar Real Estate Partners,Samuel,Murphy,Real Estate Consultant,(201) 555-2073,samuel.murphy.29@northstarrealestat.example.com,,White Plains,NY,10601,Referral,Residential
+RE-0076,Northstar Commercial Realty,Hannah,Wells,Listing Agent,(848) 555-3812,hannah.wells.76@northstarcommercia.example.com,642 Cedar Pl,Easton,PA,18042,Past Client,Commercial
+RE-0115,Meadowbrook Realty Group,Hannah,Bryant,Broker Associate,(201) 555-5255,hannah.bryant.115@meadowbrookrealtyg.example.com,515 Madison St,Montclair,NJ,07042,Networking,Commercial
+RE-0052,PrimePath Real Estate,Mia,Wells,Realtor,(484) 555-2924,mia.wells.52@primepathrealestat.example.com,494 Highland Ave,Bethlehem,PA,18018,Past Client,Commercial
+RE-0276,Keystone Property Group,Ella,Gardner,Real Estate Agent,(732) 555-2036,,346 Lake Dr,Montclair,NJ,07042,Website,Commercial
+RE-0138,Silver Key Property Group,Noah,Peterson,Property Manager,(973) 555-6106,noah.peterson.138@silverkeypropertyg.example.com,616 Chestnut Way,Jersey City,NJ,07302,Referral,Residential
+RE-0202,Stonebridge Realty,Adrian,Gardner,Property Manager,(856) 555-8474,adrian.gardner.202@stonebridgerealty.example.com,684 Washington Way,Hackensack,NJ,07601,Open House,Residential
+RE-0123,Cedar Lane Commercial Realty,Ava,Stone,Leasing Specialist,(862) 555-5551,ava.stone.123@cedarlanecommercia.example.com,891 Jefferson Rd,Easton,PA,18042,Open House,Commercial
+RE-0248,Ironwood Commercial Realty,Ava,Bryant,Regional Property Manager,6095556217,ava.bryant.141@ironwoodcommercial.example.com,757 Main Ave,Parsippany,NJ,07054,Property Portal,Property Management
+RE-0077,BrightStone Real Estate Partners,Jack,Parker,Director of Leasing,(609) 555-3849,jack.parker.77@brightstonerealest.example.com,689 Maple Rd,Princeton,NJ,08540,Property Portal,Residential
+RE-0198,Meadowbrook Homes,Chloe,Webb,Acquisitions Manager,(862) 555-8326,chloe.webb.198@meadowbrookhomes.example.com,496 Lincoln Pl,Brooklyn,NY,11201,Open House,Residential
+RE-0126,Riverbend Residential,Sarah,Gray,Broker Associate,(856) 555-5662,sarah.gray.126@riverbendresidenti.example.com,52 Main Ln,Doylestown,PA,18901,Referral,Investment
+RE-0085,Oak & Main Residential,Lucas,Wells,Acquisitions Manager,(215) 555-4145,lucas.wells.85@oakmainresidential.example.com,85 Park Way,Hoboken,NJ,07030,Past Client,Property Management
+RE-0044,Urban Nest Realty Group,Claire,Bishop,Investment Sales Associate,(973) 555-2628,claire.bishop.44@urbannestrealtygro.example.com,118 Chestnut Way,Philadelphia,PA,19103,Past Client,Residential
+RE-0172,Silver Key Property Advisors,Isabella,Stone,Property Manager,(610) 555-7364,isabella.stone.172@silverkeypropertya.example.com,254 Madison Ave,Doylestown,PA,18901,Open House,Residential
+RE-0046,Beacon Properties,Miles,Wells,Broker Associate,(973) 555-2702,miles.wells.46@beaconproperties.example.com,212 Lake Dr,Jersey City,NJ,07302,MLS Inquiry,Commercial
+RE-0145,Urban Nest Properties,Isabella,Spencer,Buyer's Agent,(201) 555-6365,isabella.spencer.145@urbannestpropertie.example.com,945 Lake St,Jersey City,NJ,07302,Networking,Commercial
+RE-0201,Harbor Commercial Realty,Isaac,Carter,Broker Associate,(201) 555-8437,isaac.carter.201@harborcommercialre.example.com,637 Madison Pl,New York,NY,10011,Property Portal,Residential
+RE-0169,Parkside Realty Group,Julia,Hunter,Managing Broker,(215) 555-7253,julia.hunter.169@parksiderealtygrou.example.com,113 Maple Dr,Princeton,NJ,08540,Website,Residential
+RE-0101,Evergreen Realty,Naomi,Reed,Acquisitions Manager,(215) 555-4737,naomi.reed.101@evergreenrealty.example.com,837 Broad Rd,Parsippany,NJ,07054,Networking,Investment
+RE-0281,Silver Key Properties,Sebastian,Cooper,Acquisitions Manager,215-555-7401,sebastian.cooper.173@silverkeypropertie.example.com,301 Main Dr,Montclair,NJ,07042,Networking,Residential
+RE-0011,Pinnacle Homes,Ruby,Bailey,Acquisitions Manager,(215) 555-1407,ruby.bailey.11@pinnaclehomes.example.com,527 Center Dr,Doylestown,PA,18901,Open House,Residential
+RE-0024,Cornerstone Property Advisors,Scarlett,Hamilton,Buyer's Agent,(848) 555-1888,scarlett.hamilton.24@cornerstonepropert.example.com,158 Madison Pl,Philadelphia,PA,19103,MLS Inquiry,Commercial
+RE-0089,Beacon Real Estate,Henry,Richardson,Broker Associate,(856) 555-4293,henry.richardson.89@beaconrealestate.example.com,273 Madison Ave,Morristown,NJ,07960,Open House,Commercial
+RE-0237,Redwood Residential,Owen,Brooks,Investment Sales Associate,4845555440,owen.brooks.120@redwoodresidential.example.com,750 Oak Blvd,Bethlehem,PA,18018,Networking,Commercial
+RE-0239,Silver Key Realty Group,Elena,Warren,Acquisitions Manager,609-555-8733,elena.warren.209@silverkeyrealtygro.example.com,33 Washington Dr,Doylestown,PA,18901,Open House,Residential
+RE-0083,Summit Properties,Thomas,Hayes,Regional Property Manager,(215) 555-4071,thomas.hayes.83@summitproperties.example.com,971 Center St,King of Prussia,PA,19406,Open House,Investment
+RE-0133,MetroPoint Commercial Realty,Connor,Dunn,Commercial Broker,(862) 555-5921,connor.dunn.133@metropointcommerci.example.com,381 Lincoln Rd,Philadelphia,PA,19103,Networking,Residential
+RE-0278,  OAK & MAIN HOMES ,sophia,BROOKS,Leasing Specialist,(267) 555-6994,SOPHIA.BROOKS.162@OAKMAINHOMES.EXAMPLE.COM,764 Cedar Ave,Parsippany,NJ,07054,Referral,Commercial
+RE-0250,Riverbend Property Advisors,Eli,Kelly,Property Manager,610-555-2184,eli.kelly.32@riverbendpropertya.example.com,534 Center Dr,Stamford,CT,06901,MLS Inquiry,Residential
+RE-0211,Maple Street Property Group,Victoria,Hamilton,Managing Broker,(484) 555-8807,victoria.hamilton.211@maplestreetpropert.example.com,127 Franklin Way,Parsippany,NJ,07054,Past Client,Residential
+RE-0071,Summit Real Estate Partners,Sophia,Hughes,Broker Associate,(973) 555-3627,sophia.hughes.71@summitrealestatepa.example.com,407 Highland Blvd,Stamford,CT,06901,Open House,Residential
+RE-0225,Silver Key Realty Group,Zoe,Ford,Realtor,(908) 555-9325,zoe.ford.225@silverkeyrealtygro.example.com,785 Lake Rd,Stamford,CT,06901,MLS Inquiry,Residential
+RE-0119,Evergreen Residential,James,Brooks,Real Estate Consultant,(856) 555-5403,james.brooks.119@evergreenresidenti.example.com,703 Market Dr,New York,NY,10011,Networking,Commercial
+RE-0245,  BEACON PROPERTY ADVISORS ,caleb,JAMES,Real Estate Agent,(609) 555-6846,CALEB.JAMES.158@BEACONPROPERTYADVI.EXAMPLE.COM,576 Madison Rd,Allentown,PA,18101,Referral,Property Management
+RE-0001,Ironwood Real Estate Partners,Chloe,Bennett,Director of Leasing,(267) 555-1037,chloe.bennett.1@ironwoodrealestate.example.com,57 Lake Way,New York,NY,10011,MLS Inquiry,Residential
+RE-0185,Keystone Residential,Logan,Freeman,Leasing Specialist,(484) 555-7845,logan.freeman.185@keystoneresidentia.example.com,865 Chestnut St,White Plains,NY,10601,Networking,Property Management
+RE-0223,MetroPoint Residential,Dylan,Russell,Property Manager,(201) 555-9251,dylan.russell.223@metropointresident.example.com,691 Walnut Ln,New York,NY,10011,Property Portal,Residential
+RE-0154,Evergreen Real Estate Partners,Isaac,Webb,Broker Associate,(908) 555-6698,isaac.webb.154@evergreenrealestat.example.com,388 Madison Pl,Hoboken,NJ,07030,Open House,Residential
