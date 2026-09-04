@@ -4,15 +4,17 @@
 
 A command-line Python tool for deduplicating CSV and XLSX datasets using exact and fuzzy matching.
 
-Fuzzy mode combines normalized name similarity with email, phone, and address signals, then separates high-confidence duplicates from records that should be reviewed manually.
+Fuzzy mode combines normalized name similarity with email, phone, and address signals, then separates higher-confidence duplicates from records that should be reviewed manually.
 
 ## Features
 
 - Exact duplicate removal
 - Fuzzy matching with `rapidfuzz`
 - Weighted scoring across name, email, phone, and address
+- Support for either a full-name column or separate first/last-name columns
 - Confidence classification
 - Manual-review output for ambiguous matches
+- Run summary showing original, clean, duplicate, review, and total-flagged counts
 - CSV and XLSX input support
 - CSV or XLSX output support
 
@@ -42,7 +44,7 @@ python dedup_tool.py input.csv --mode exact --columns name email phone
 python dedup_tool.py input.csv --mode fuzzy
 ```
 
-The default fuzzy settings are:
+The default fuzzy settings are intentionally conservative:
 
 - Duplicate threshold: `0.85`
 - Manual-review threshold: `0.75`
@@ -54,28 +56,55 @@ These values can be adjusted from the command line:
 python dedup_tool.py input.csv --mode fuzzy --threshold 0.90 --review-threshold 0.75 --min-name-score 75
 ```
 
+Thresholds are rule-based and may need tuning for different datasets or industries. Lower thresholds increase recall but can also increase false positives, so review results before using more permissive settings in production.
+
 ## Input Formats
 
 - CSV (`.csv`)
 - Excel (`.xlsx`)
 
+## Recognized Matching Columns
+
+Fuzzy mode attempts to detect commonly named fields for:
+
+- full name
+- first name + last name
+- email
+- phone
+- address
+
+Column-name matching is normalized so common variations such as spaces, hyphens, and underscores can map to the same logical field. For example, `Phone Number` can match a configured `phone_number` candidate.
+
 ## Output
 
 By default, the tool creates:
 
-- `cleaned_output.csv` — deduplicated records
+- `cleaned_output.csv` — records retained after automatic duplicate removal
 - `duplicates_review.csv` — records classified as duplicates
 - `manual_review.csv` — ambiguous records requiring manual review
 
 Custom output paths can be supplied with `--output-clean`, `--output-duplicates`, and `--output-review`.
 
-Reproducible demo and test fixtures may be committed under `tests/` when they are part of the documented test suite rather than transient output.
+At the end of each run, the CLI prints a summary similar to:
+
+```text
+--- RESULTS ---
+Original rows:        300
+Clean output rows:    236
+Duplicates removed:    64
+Manual review rows:     4
+Total flagged:          68
+```
+
+In fuzzy mode, the active duplicate threshold, review threshold, and minimum name score are also printed so the run can be reproduced later.
+
+Manual-review rows remain in the cleaned output because they have not been automatically removed.
 
 ## Demo and Test Fixtures
 
 Small synthetic datasets may be included under `tests/` to support reproducible demonstrations and validation.
 
-For example, the real-estate demo fixture is intended to exercise:
+The real-estate demo fixture is intended to exercise:
 
 - exact duplicates
 - case and whitespace normalization
@@ -86,7 +115,21 @@ For example, the real-estate demo fixture is intended to exercise:
 - missing fields
 - multi-field fuzzy matches
 
-Ground-truth files may be stored alongside demo inputs so matching results can be checked against known duplicate relationships. 
+Ground-truth files may be stored alongside demo inputs so matching results can be checked against known duplicate relationships.
+
+Generated run outputs are normally ignored unless they are intentionally preserved as documented regression fixtures.
+
+### Validated demo calibration
+
+A documented 300-row synthetic real-estate fixture has also been tested with a more permissive calibration:
+
+```text
+Duplicate threshold: 0.75
+Review threshold:    0.60
+Minimum name score:  70
+```
+
+That calibration is useful as a regression/demo profile for the fixture, but it is not the global default and should not be assumed appropriate for every dataset.
 
 ## Fuzzy Matching
 
@@ -95,11 +138,13 @@ Fuzzy mode normalizes common name, email, phone, and address fields before compa
 The weighted score currently uses:
 
 - Name similarity: 50%
-- Exact normalized email match: 25%
+- Email evidence: up to 25%
 - Exact normalized phone match: 15%
 - Exact normalized address match: 10%
 
-A record must also meet the configured minimum name score when a name column is available.
+Email evidence is hierarchical rather than additive. An exact normalized email receives the strongest email score, while same-domain local-part similarity may receive a lower partial score.
+
+When a usable name source is available, a record must also meet the configured minimum fuzzy name score before it can be classified as a duplicate or manual-review candidate.
 
 ## Debug Preview
 
@@ -115,7 +160,9 @@ The number of preview rows can be changed with `--preview-rows`.
 
 Version 0.1.0 is an early usable release. Matching weights and thresholds are currently rule-based and may need tuning for different datasets or industries.
 
-Large datasets may require additional performance optimization because fuzzy matching currently compares candidate records iteratively.
+Fuzzy matching currently compares records iteratively against retained records, so very large datasets may require additional candidate blocking or performance optimization.
+
+Matching is order-dependent because fuzzy candidates are compared against records retained earlier in the dataset.
 
 Legacy `.xls` files are not supported in this release; convert them to `.xlsx` or `.csv` first.
 
@@ -127,6 +174,7 @@ Legacy `.xls` files are not supported in this release; convert them to `.xlsx` o
 - Expanded testing and benchmark datasets
 - More flexible column mapping
 - Additional review and reporting options
+- Named matching profiles or configuration files for repeatable calibrations
 
 ## Requirements
 
